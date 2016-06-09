@@ -72,7 +72,32 @@ In some cases, it may be more helpful to start at a number other than 0. What if
 
 	print range(1, 6)
 
+**Check your Understanding**
 
+.. mchoicema:: test_question08_3_1
+	:answer_a: range(3)
+	:answer_b: [1, 2, 3]
+	:answer_c: range(0, 3)
+	:answer_d: [0, 1, 2]
+	:answer_e: [3]
+	:feedback_a: Yes, this creates [0, 1, 2]!
+	:feedback_b: Not quite, this is a list of three elements, but are they the same elements as are in the equivalent lists?
+	:feedback_c: Yes, this creates [0, 1, 2]!
+	:feedback_d: Yes, this list matches those created using range.
+	:feedback_e: This just is a list with one element, the integer 3.
+	:correct: a,c,d
 
+	Which of these answers are equivalent? (choose all that apply)
+
+.. mchoicemf:: test_question08_3_2
+	:answer_a: It tells a for loop how far to go.
+	:answer_b: It prints something the specifed amount of times.
+	:answer_c: It automatically generates a list of numbers.
+	:feedback_a:  Not necessarily, you don't have to use range just with for loops.
+	:feedback_b: While range can be used to specify a certain number of times that something is done, it has nothing to do with printing.
+	:feedback_c: 
+	:correct: c 
+
+	What does ``range`` do?
 
 

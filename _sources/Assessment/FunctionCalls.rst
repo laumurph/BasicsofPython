@@ -28,7 +28,7 @@ It is also possible for programmers to define new functions in their programs. Y
    def sub(x, y):
       return x - y
 
-We've defined two functions above. The code is hidden so as not to bother you (yet) with how functions are defined. `square`` takes a single input parameter, and returns that input multiplied by itself. ``sub`` takes two input parameters and returns the result of subtracting the second from the first. Obviously, these functions are not particularly useful, since we have the operators ``*`` and ``-`` available. But they illustrate how functions work.
+We've defined two functions above. The code is hidden so as not to bother you (yet) with how functions are defined. ``square`` takes a single input parameter, and returns that input multiplied by itself. ``sub`` takes two input parameters and returns the result of subtracting the second from the first. Obviously, these functions are not particularly useful, since we have the operators ``*`` and ``-`` available. But they illustrate how functions work.
 
 .. activecode:: functionCalls_2
    :include: functionCalls_1
@@ -59,7 +59,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
+      :answer_d: nothing will print
       :correct: b
       :feedback_a: The result of executing the function call will print out
       :feedback_b: The second is subtracted from the first
@@ -76,7 +76,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
+      :answer_d: nothing will print
       :correct: a
       :feedback_a: The character sting is treated as a literal and printed out, without executing
       :feedback_b: The character sting is treated as a literal and printed out, without executing
@@ -93,7 +93,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
+      :answer_d: nothing will print
       :correct: d
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement
@@ -110,7 +110,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
+      :answer_d: nothing will print
       :correct: d
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement

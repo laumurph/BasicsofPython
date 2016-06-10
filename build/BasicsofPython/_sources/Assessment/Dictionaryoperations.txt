@@ -33,7 +33,7 @@ example, instead of deleting the entry for ``pears``, we could have set the inve
 
 .. note:: 
    
-   Setting the value associated with ``pears`` to 0 has a different effect than removing the key-value pair entirely with ``del``. Try printout out the two dictionaries in the examples above.
+   Setting the value associated with ``pears`` to 0 has a different effect than removing the key-value pair entirely with ``del``. Try printing out the two dictionaries in the examples above.
 
 Similarily,
 a new shipment of 200 bananas arriving could be handled like this.

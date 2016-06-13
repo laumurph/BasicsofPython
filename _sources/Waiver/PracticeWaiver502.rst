@@ -16,14 +16,14 @@
     :linenothreshold: 500
 
 
-.. 22 problems in the practice assessment
+.. 26 problems in the practice assessment
 
 Practice Assessment for 502 Waiver
 ::::::::::::::::::::::::::::::::::
 
-The following is the practice assessment for the 502 Waiver. This should take about 30 minutes to complete. Content for the assessment is based on the Basics of Python chapter.
+The following is the practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a timelimit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you. This is also an indication of how well you will be prepared to take 506, should you decide to waive out of 502. Content for the assessment is based on the Basics of Python chapter.
 
-**Instructions** For questions that require you to write code, write the code you want to save in the provided boxes. This is not a timed assessment, but feel free to keep track of how long it takes you to complete this page as an idicator of how well you will be prepared should you go straight into 506.
+**Instructions:** For questions that require you to write code, write the code you want to save in the provided active code windows. Tests written will let you know if you passed or failed. Do not hardcode answers.
 
 .. mchoicemf:: pwaiver_mc_1
    :answer_a: "Hello, world!"
@@ -389,6 +389,67 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
       a = b == 10
       print a
 
+Write code so that if the contents of the variable ``new`` are inside of the list ``tester`` then the variable ``old`` is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.
 
+.. activecode:: pwaiver_a_7
+   :nocodelens:
 
+   new = "win"
+   tester = ["won", 19.2, "lost", 2.0, "winner", "victory", "Gold cup"]
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(old, False, "The value of old has not been assigned correctly.")
+
+   myTests().main()
+
+.. mchoicemf:: pwaiver_mc_14
+   :answer_a: Yes, it is an important part of Python and is necessary to include.
+   :answer_b: Yes, it helps so that programs look nice and organized.
+   :answer_c: No, it is only for aesthetics and is not necessary.
+   :answer_d: No, indentation is not important or necessary in Python, only optional.
+   :feedback_a: Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included. 
+   :feedback_b: Though it is important for Python, it's not needed in order to have the code look pretty and orderly. It is actually required.
+   :feedback_c: Indentation is for aesthetics, though it can make reading programs easier for some people. Python requires that you include indentation when it is necessary.
+   :feedback_d: Indentation is not optional in Python. It is needed to run the program and throws up an error if indentation is missing from its propper places.
+   :correct: a
+
+   Is indentation in Python important?
+
+.. parsonsprob:: pwaiver_pp_4
+
+   Organize the code snipits so that each name is saved as a value in a list called "a_names" if it starts with an "A".
+
+   -----
+   names = ["Jessica", "Ahmed", "Lela",
+       "Alex", "Rasheed", "Yuri", "Mariana",
+      "Akira", "Rei", "Aretta", "James", "Eya"]
+   =====
+   a_names = []
+   =====
+   for n in names:
+   =====
+      if n[0] == "A":
+   =====
+         a_names = a_names + [n]
+
+.. mchoicema:: pwaiver_mc_15
+   :answer_a: Dictionaries
+   :answer_b: Strings
+   :answer_c: Lists
+   :answer_d: Integers
+   :answer_e: Floats
+   :feedback_a: Dictionaries are not able to be indexed into.
+   :feedback_b: You are able to index into strings.
+   :feedback_c: You are able to index into lists.
+   :feedback_d: Integers are not able to be indexed into.
+   :feedback_e: Floats are not able to be indexed into.
+   :correct: b, c
+
+   Which of these can you index into?
 

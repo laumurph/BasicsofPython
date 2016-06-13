@@ -16,6 +16,8 @@
     :linenothreshold: 500
 
 
+.. 22 problems in the practice assessment
+
 Practice Assessment for 502 Waiver
 ::::::::::::::::::::::::::::::::::
 
@@ -30,7 +32,7 @@ The following is the practice assessment for the 502 Waiver. This should take ab
    :feedback_a: When printing a string, the quotes are not included.
    :feedback_b: When printing a string, the quotes are not included.
    :feedback_c: Python does not require that you initialize your variable's type.
-   :correct:
+   :correct: b
 
    What is the output when this code is run?
 
@@ -43,7 +45,7 @@ The following is the practice assessment for the 502 Waiver. This should take ab
    :answer_a: var[2]
    :answer_b: var[2:3]
    :answer_c: var["g"]
-   :answer_d: var[8]
+   :answer_d: var[-8]
    :feedback_a: This refers to the substring "g".
    :feedback_b: Instead of being a string type, this one is a list because it used slicing.
    :feedback_c: An Error occurs because when indexing, you must use the numerical position.
@@ -60,11 +62,13 @@ The following is the practice assessment for the 502 Waiver. This should take ab
    :answer_a: 23
    :answer_b: 26
    :answer_c: 22
+   :answer_d: 25
    :answer_d: An Error occurs, incorrect use of len function.
    :feedback_a: Spaces are counted as characters and are accounted for when using the len function.
    :feedback_b: There are 26 characters.
    :feedback_c: Spaces and puncuation are counted as characters and are accounted for when using the len function.
    :feedback_d: The len function can take a variable as input, this does not cause an error.
+   :feedback_e: The len function returns the number of characters that are found in what is inputted. Unlike indexing, it will start with 1, not 0. 
    :correct: b
 
    Which is these is the correct number produced by the following code?
@@ -93,6 +97,17 @@ Save the value of the (human) 5th position in the list into a variable called ``
    :nocodelens:
 
    zxy = [1, 2, 30, "sims", ["Hello", 9.4, "World", "python"], 502, 506]
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Your assignment does not align with the correct position in the list.")
+
+   myTests().main()
 
 .. parsonsprob:: pwaiver_pp_1
    
@@ -133,14 +148,25 @@ Save the value of the (human) 5th position in the list into a variable called ``
    :feedback_d: correct, num would be reassigned the value of num plus 1.
    :correct: a,d
 
-   Which snipit of code would increment the value of code by one? (choose all that apply) 
+   Which snipit of code would increment the value of ``num`` by one? (choose all that apply) 
 
-Using the variable ``wrds`` as inspriation, how might you grab the last six characters of a string? Save the last 6 characters of ``wrds`` in a variable called plc so that when plc is printed out, the output would be: States.
+Using the variable ``wrds``, how might you grab the last seven characters of a string? Save the last 7 characters of ``wrds`` in a variable called ``plc`` so that when plc is printed out, the output would be: States.
 
 .. activecode:: pwaiver_a_2
    :nocodelens:
 
-   wrds = "Summer is a warm time of year in the United States"
+   wrds = "Summer is a warm time of year in the United States."
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(plc, wrds[-7:], "plc does not contain the correct characters.")
+
+   myTests().main()
 
 .. parsonsprob:: pwaiver_pp_2
 
@@ -186,6 +212,17 @@ Using the two variables listed, combine them together and save that in a variabl
    place = "The arb was a great place "
    feel = "to visit this week!"
 
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(combo, place + feel, "You have not correctly concatinated the two variables.")
+
+   myTests().main()
+
 .. mchoicema:: pwaiver_mc_8
    :answer_a: range(0, hbe)
    :answer_b: range(hbe)
@@ -229,15 +266,23 @@ Using the two variables listed, combine them together and save that in a variabl
 
    Which are the boolean values? (Choose all that apply)
 
-Save the types of each value in the list in a new list called ``type_vals``.
+Save the length of each element in the list in a new list called ``len_vals``.
 
 .. activecode:: pwaiver_a_4
    :nocodelens:
 
-   welcome = True
-   chess = "Checkmate"
-   vals = [3, False, {chess: welcome, "rook": 10, 39.4: 2},
-          [], welcome, "Checkers"]
+   vals = ["Python", "summer time", "Hello World!", "onomonopia", "Floccinaucinihilipilification", "supercalifragilisticexpialidocious", "wheel", "copyright", "fall", "School of Information"]
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(len_vals, [6, 11, 12, 10, 29, 34, 5, 9, 4, 21], "You have not correctly created a list with the lengths of the elements in the vals variable.")
+
+   myTests().main()
 
 .. mchoicemf:: pwaiver_mc_10
    :answer_a: dict = value[key]
@@ -250,7 +295,7 @@ Save the types of each value in the list in a new list called ``type_vals``.
    :feedback_d: In order to create a new key value pair, the key must be on the right side of the assignment statement because it is used to reference the value, which is on the left side of the assignment statement.
    :correct: b
 
-   How can you add a new key value pair for a dictionary?
+   How can you add a new key value pair to a dictionary?
 
 .. mchoicemf:: pwaiver_mc_11
    :answer_a: indecies
@@ -263,10 +308,23 @@ Save the types of each value in the list in a new list called ``type_vals``.
 
    How are dictionaries accessed?
 
-Create a dictionary called ``extra`` that has the key-value pairs: "Black" and "White", 14.9 and 0, "milkshake" and 390, and an empty list and 29.
+Create a dictionary called ``extra`` that has the key-value pairs: "Black" and "White", 14.9 and 0, "milkshake" and 390, and 29 and an empty list.
 
 .. activecode:: pwaiver_a_5
    :nocodelens:
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "The dictionary was not set up correctly.")
+         self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "The values of your dictionary do not match what is expected.")
+
+
+   myTests().main()
 
 
 .. mchoicemf:: pwaiver_mc_12
@@ -296,6 +354,17 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
 
 .. activecode:: pwaiver_a_6
    :nocodelens:
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Your list does not cover the correct range")
+
+   myTests().main()
 
 .. mchoicemf:: pwaiver_mc_13
    :answer_a: True

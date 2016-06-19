@@ -50,6 +50,7 @@ Assessment
 ::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Waiver/waiver502.rst
+   Waiver/PracticeWaiver502.rst

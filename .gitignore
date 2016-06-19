@@ -1,0 +1,6 @@
+*.pyc
+.idea/*
+build_info
+build/
+
+# Please enter the commit message for your changes. Lines starting

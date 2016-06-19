@@ -45,3 +45,12 @@ Basics of Programming
    Assessment/OmittingtheelseClauseUnarySelection.rst
    Assessment/intro-Dictionaries.rst
    Assessment/Dictionaryoperations.rst
+
+Assessment
+::::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   Waiver/waiver502.rst
+   Waiver/PracticeWaiver502.rst

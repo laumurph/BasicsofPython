@@ -1,6 +1,7 @@
 :orphan:
+
 .. qnum::
-   :prefix: pwaiver502_
+   :prefix: practice_
    :start: 1
 
 ..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
@@ -21,16 +22,18 @@
 Practice Assessment for 502 Waiver
 ::::::::::::::::::::::::::::::::::
 
-The following is the practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a timelimit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you. This is also an indication of how well you will be prepared to take 506, should you decide to waive out of 502. Content for the assessment is based on the Basics of Python chapter.
+The following is a practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a time limit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you.
 
-**Instructions:** For questions that require you to write code, write the code you want to save in the provided active code windows. Tests written will let you know if you passed or failed. Do not hardcode answers.
+Everything in this chapter can be completed after reading the Basics of Python chapter on this site.
 
-.. mchoicemf:: pwaiver_mc_1
+**Instructions:** For questions that require you to write code, write the code you want to save in the provided active code windows. Hidden test code will let you know if you passed or failed, but don't hardcode answers to pass the tests; answer the question as posed.
+
+.. mchoice:: pwaiver_mc_1
    :answer_a: "Hello, world!"
    :answer_b: Hello, world!
    :answer_c: An error occurs, you have not initialized the type of the variable.
-   :feedback_a: When printing a string, the quotes are not included.
-   :feedback_b: When printing a string, the quotes are not included.
+   :feedback_a: When printing a string, the quotes are not included in the output.
+   :feedback_b: When printing a string, the quotes are not included in the output.
    :feedback_c: Python does not require that you initialize your variable's type.
    :correct: b
 
@@ -41,16 +44,17 @@ The following is the practice assessment for the 502 Waiver. This should take ab
       first_prog = "Hello, world!"
       print first_prog
 
-.. mchoicema:: pwaiver_mc_2
+.. mchoice:: pwaiver_mc_2
+   :multiple_answers:
    :answer_a: var[2]
    :answer_b: var[2:3]
    :answer_c: var["g"]
    :answer_d: var[-8]
    :feedback_a: This refers to the substring "g".
-   :feedback_b: Instead of being a string type, this one is a list because it used slicing.
+   :feedback_b: This refers to the substring "g", not "g ", because the slice goes up to but does include position 3
    :feedback_c: An Error occurs because when indexing, you must use the numerical position.
    :feedback_d: This refers to the substring "g".
-   :correct: a,d
+   :correct: a,b,d
 
    Which of these are equivalent? (Choose all that apply)
 
@@ -58,27 +62,28 @@ The following is the practice assessment for the 502 Waiver. This should take ab
 
       var = "Big House!"
 
-.. mchoicemf:: pwaiver_mc_3
-   :answer_a: 23
-   :answer_b: 26
-   :answer_c: 22
-   :answer_d: 25
-   :answer_d: An Error occurs, incorrect use of len function.
-   :feedback_a: Spaces are counted as characters and are accounted for when using the len function.
-   :feedback_b: There are 26 characters.
-   :feedback_c: Spaces and puncuation are counted as characters and are accounted for when using the len function.
-   :feedback_d: The len function can take a variable as input, this does not cause an error.
-   :feedback_e: The len function returns the number of characters that are found in what is inputted. Unlike indexing, it will start with 1, not 0. 
-   :correct: b
+.. mchoice:: pwaiver_mc_3
+   :answer_a: 13
+   :answer_b: 14
+   :answer_c: 16
+   :answer_d: 18
+   :answer_e: An Error occurs, incorrect use of len function.
+   :feedback_a: Spaces and periods are counted as characters when using the len function.
+   :feedback_b: Spaces and periods are counted as characters when using the len function.
+   :feedback_c: There are 16 characters.
+   :feedback_d: Hmm, where did you get the extra 2 characters from?
+   :feedback_e: The len function returns the number of characters in a string.
+   :correct: c
 
-   Which is these is the correct number produced by the following code?
+   What output will be produced by the following code?
 
    .. sourcecode:: python
 
-      sent = "Welcome to the University."
-      print len(sent)
+      sentence = "Welcome to UMSI."
+      print len(sentence)
 
-.. mchoicema:: pwaiver_mc_4
+.. mchoice:: pwaiver_mc_4
+   :multiple_answers:
    :answer_a: When doing calculations to denote what should be done first.
    :answer_b: Creating lists.
    :answer_c: Calling a function.
@@ -91,7 +96,7 @@ The following is the practice assessment for the 502 Waiver. This should take ab
 
    Where can you use ``()`` in programming so far? (choose all that apply)
 
-Save the value of the (human) 5th position in the list into a variable called ``abc``.
+Extract the value from the 5th position in the list (the sublist beginning ["Hello", 9.4]) into a variable called ``abc``.
 
 .. activecode:: pwaiver_a_1 
    :nocodelens:
@@ -105,17 +110,15 @@ Save the value of the (human) 5th position in the list into a variable called ``
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Your assignment does not align with the correct position in the list.")
+         self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Testing whether abc has the right value.")
 
    myTests().main()
 
 .. parsonsprob:: pwaiver_pp_1
    
-   Arrange the following code snipits into the correct order so that if new_class is larger than or equal to 506 then it will print "You might be going into 506." If new_class is smaller than 502, print "Have you applied to the school?" Otherwise, print "This is the waiver."
+   Arrange the following code snippets into the correct order. The variable new_class is assumed to have already been assigned a value. If it's 506 or more, then it should print "You might be going into 506." If new_class is smaller than 502, it print "Have you applied to the school?" Otherwise, it should print "This is the waiver."
 
    -----
-   new_class = 502
-   =====
    if new_class >= 506:
    =====
        print "You might be going to 506."
@@ -128,16 +131,17 @@ Save the value of the (human) 5th position in the list into a variable called ``
    =====
        print "This is the waiver."
 
-.. mchoicemf:: pwaiver_mc_5
+.. mchoice:: pwaiver_mc_5
    :answer_a: False
    :answer_b: True
    :feedback_a: You can have an if statement that does not have an elif and/or else.
    :feedback_b: You can have an if statement that does not have an elif and/or else.
    :correct: b
 
-   True or false, you may have an if statement without an elif and/or else?
+   True or false: you may have an if statement without a corresponding else clause or elif clause.
 
-.. mchoicema:: pwaiver_mc_6
+.. mchoice:: pwaiver_mc_6
+   :multiple_answers:
    :answer_a: num = num + 1
    :answer_b: num ++
    :answer_c: num ++ 1
@@ -148,7 +152,7 @@ Save the value of the (human) 5th position in the list into a variable called ``
    :feedback_d: correct, num would be reassigned the value of num plus 1.
    :correct: a,d
 
-   Which snipit of code would increment the value of ``num`` by one? (choose all that apply) 
+   Which snippet of code would increment the value of ``num`` by one? (choose all that apply)
 
 Using the variable ``wrds``, how might you grab the last seven characters of a string? Save the last 7 characters of ``wrds`` in a variable called ``plc`` so that when plc is printed out, the output would be: States.
 
@@ -164,13 +168,13 @@ Using the variable ``wrds``, how might you grab the last seven characters of a s
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(plc, wrds[-7:], "plc does not contain the correct characters.")
+         self.assertEqual(plc, wrds[-7:], "Checking the value of plc.")
 
    myTests().main()
 
 .. parsonsprob:: pwaiver_pp_2
 
-   Organize the code snipits so that if the string "venmo" is an element of the list, then it prints out True, otherwise, it print False.
+   Organize the code snippets so that if the string "venmo" is an element of the list, then it prints out True, and otherwise, it print False.
 
    -----
    lst = ["I use venmo", 
@@ -185,7 +189,7 @@ Using the variable ``wrds``, how might you grab the last seven characters of a s
    =====
       print False
 
-.. mchoicemf:: pwaiver_mc_7
+.. mchoice:: pwaiver_mc_7
    :answer_a: 1
    :answer_b: 4
    :answer_c: 5
@@ -196,7 +200,7 @@ Using the variable ``wrds``, how might you grab the last seven characters of a s
    :feedback_d: Since we are using negative indicies, we will not use "Good-bye", we will use the last element, which is the list [10, 9, [], "good night"]
    :correct: b
 
-   What is returned at the end of this program?
+   What is the output of this program?
 
    
    .. sourcecode:: python
@@ -219,22 +223,24 @@ Using the two variables listed, combine them together and save that in a variabl
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(combo, place + feel, "You have not correctly concatinated the two variables.")
+         self.assertEqual(combo, place + feel, "Checking the value of combo.")
 
    myTests().main()
 
-.. mchoicema:: pwaiver_mc_8
-   :answer_a: range(0, hbe)
-   :answer_b: range(hbe)
-   :answer_c: range(16)
+.. mchoice:: pwaiver_mc_8
+   :answer_a: len(range(hbe))
+   :answer_b: range(len(hbe))
+   :answer_c: range(15)
    :answer_d: range() = hbe
-   :feedback_a: This will produce a list that contains elements between 0 and 15.
+   :answer_e: range(hbe)
+   :feedback_a: range expects a number as input, not a string.
    :feedback_b: This will produce a list that contains elements between 0 and 15.
-   :feedback_c: While this would produce the correct length of a list of numbers, this is considered hardcoding. Imagine we didn't know what the string was, how would you do it then?
+   :feedback_c: This is an example of why it's better not to hardcode a number when you can have python compute it. There are actually 16 characters in the string.
    :feedback_d: This would cause an error because it attempts to assign, to a function call, the value of a string. That is not permitted in Python.
-   :correct: a, b
+   :feedback_e: range expects a number as input, not a string.
+   :correct: b
 
-   Which snipit of code would produce a list of numbers with as many elements as this string without hardcoding? (Choose all that apply)
+   Which snippet of code would produce a list of numbers with as many elements as the string hbe?
 
    .. sourcecode:: python
 
@@ -242,7 +248,7 @@ Using the two variables listed, combine them together and save that in a variabl
 
 .. parsonsprob:: pwaiver_pp_3
 
-   Organize the code snipits so that "Go blue!" and "Go maize!" are printed out alternately, 4 times.
+   Organize the code snippets so that "Go blue!" and "Go maize!" are printed out alternately, 4 times.
 
    -----
    wow = "Go blue!"
@@ -253,7 +259,8 @@ Using the two variables listed, combine them together and save that in a variabl
    =====
       print "Go maize!"
 
-.. mchoicema:: pwaiver_mc_9
+.. mchoice:: pwaiver_mc_9
+   :multiple_answers:
    :answer_a: True
    :answer_b: true
    :answer_c: False
@@ -266,7 +273,7 @@ Using the two variables listed, combine them together and save that in a variabl
 
    Which are the boolean values? (Choose all that apply)
 
-Save the length of each element in the list in a new list called ``len_vals``.
+Print the length of each element in the list, using a for loop.
 
 .. activecode:: pwaiver_a_4
    :nocodelens:
@@ -275,16 +282,10 @@ Save the length of each element in the list in a new list called ``len_vals``.
 
    =====
 
-   from unittest.gui import TestCaseGui
+   print "There are no tests for this. Your output should be 6\n11\..."
 
-   class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(len_vals, [6, 11, 12, 10, 29, 34, 5, 9, 4, 21], "You have not correctly created a list with the lengths of the elements in the vals variable.")
-
-   myTests().main()
-
-.. mchoicemf:: pwaiver_mc_10
+.. mchoice:: pwaiver_mc_10
    :answer_a: dict = value[key]
    :answer_b: dict[key] = value
    :answer_c: dict = key[value]
@@ -297,11 +298,11 @@ Save the length of each element in the list in a new list called ``len_vals``.
 
    How can you add a new key value pair to a dictionary?
 
-.. mchoicemf:: pwaiver_mc_11
-   :answer_a: indecies
-   :answer_b: keys
-   :answer_c: function calls
-   :feedback_a: Indecies are used for things like strings and lists, but not for dictionaries.
+.. mchoice:: pwaiver_mc_11
+   :answer_a: a numeric index
+   :answer_b: a key
+   :answer_c: a function call
+   :feedback_a: Numeric indices are used for things like strings and lists, but not for dictionaries.
    :feedback_b: Dictionaries use keys to access their information.
    :feedback_c: Function calls are not a way to access a dicitonary, they are used to use a function.
    :correct: b
@@ -320,27 +321,27 @@ Create a dictionary called ``extra`` that has the key-value pairs: "Black" and "
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "The dictionary was not set up correctly.")
-         self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "The values of your dictionary do not match what is expected.")
+         self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "Checking whether extra has the right keys.")
+         self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "Checking whether extra has the right values.")
 
 
    myTests().main()
 
 
-.. mchoicemf:: pwaiver_mc_12
+.. mchoice:: pwaiver_mc_12
    :answer_a: the last value
    :answer_b: the last key
-   :answer_c: the values
-   :answer_d: the keys
+   :answer_c: all the values
+   :answer_d: all the keys
    :answer_e: the word item
-   :feedback_a: This will print out all of the keys, not one value. If we wanted to print out the 'last' value, we would have had to use the key that was associated with it to access the value and it would not have occured in the for loop.
-   :feedback_b: This will print out all of the keys. If we wanted to print out the 'last' one just once, we wouldn't have put the print item statement in the for loop.
-   :feedback_c: Item refers to the keys in the dictionary. If we wanted to print the values, then we would have needed to use the keys to access the values.
-   :feedback_d: Item refers to the keys in the dictionary.
-   :feedback_e: Item is not a string this case, it is a variable that refers to the keys in the dictionary.
+   :feedback_a: This will print out all of the keys, not just a single value.
+   :feedback_b: This will print out all of the keys, not just the last one, because the print statement is indented as part of the for loop.
+   :feedback_c: Iteration on a dictionary is implicitly iteration on the keys, not the values.
+   :feedback_d: item refers to a different key in the dictionary on each iteration.
+   :feedback_e: item is not a string this case; it is a variable that refers to the keys in the dictionary.
    :correct: d
 
-   What part of a dictionary is printed out at the end of the following statements?
+   What part of a dictionary is printed out by the following statements?
 
    .. sourcecode:: python
 
@@ -362,11 +363,11 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Your list does not cover the correct range")
+         self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Checking value of big_lst")
 
    myTests().main()
 
-.. mchoicemf:: pwaiver_mc_13
+.. mchoice:: pwaiver_mc_13
    :answer_a: True
    :answer_b: False
    :answer_c: 10
@@ -379,7 +380,7 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
    :feedback_e:
    :correct: a
 
-   What prints out at the end of this code?
+   What prints out when this code is run?
 
    .. sourcecode:: python
 
@@ -389,7 +390,7 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
       a = b == 10
       print a
 
-Write code so that if the contents of the variable ``new`` are inside of the list ``tester`` then the variable ``old`` is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.
+Write code so that if the value of the variable ``new`` is an element of the list ``tester`` then the variable ``old`` is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.
 
 .. activecode:: pwaiver_a_7
    :nocodelens:
@@ -404,41 +405,23 @@ Write code so that if the contents of the variable ``new`` are inside of the lis
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(old, False, "The value of old has not been assigned correctly.")
+         self.assertEqual(old, False, "Checking value of old.")
 
    myTests().main()
 
-.. mchoicemf:: pwaiver_mc_14
-   :answer_a: Yes, it is an important part of Python and is necessary to include.
-   :answer_b: Yes, it helps so that programs look nice and organized.
-   :answer_c: No, it is only for aesthetics and is not necessary.
-   :answer_d: No, indentation is not important or necessary in Python, only optional.
+.. mchoice:: pwaiver_mc_14
+   :answer_a: Yes, indentation can change the meaning of a program.
+   :answer_b: It helps so that programs look nice and organized, but has no effect on the execution of the program.
+   :answer_c: No, indentation is not important or necessary in Python.
    :feedback_a: Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included. 
-   :feedback_b: Though it is important for Python, it's not needed in order to have the code look pretty and orderly. It is actually required.
-   :feedback_c: Indentation is for aesthetics, though it can make reading programs easier for some people. Python requires that you include indentation when it is necessary.
-   :feedback_d: Indentation is not optional in Python. It is needed to run the program and throws up an error if indentation is missing from its propper places.
+   :feedback_b: Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.
+   :feedback_d: Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.
    :correct: a
 
    Is indentation in Python important?
 
-.. parsonsprob:: pwaiver_pp_4
-
-   Organize the code snipits so that each name is saved as a value in a list called "a_names" if it starts with an "A".
-
-   -----
-   names = ["Jessica", "Ahmed", "Lela",
-       "Alex", "Rasheed", "Yuri", "Mariana",
-      "Akira", "Rei", "Aretta", "James", "Eya"]
-   =====
-   a_names = []
-   =====
-   for n in names:
-   =====
-      if n[0] == "A":
-   =====
-         a_names = a_names + [n]
-
-.. mchoicema:: pwaiver_mc_15
+.. mchoice:: pwaiver_mc_15
+   :multiple_answers:
    :answer_a: Dictionaries
    :answer_b: Strings
    :answer_c: Lists
@@ -452,4 +435,3 @@ Write code so that if the contents of the variable ``new`` are inside of the lis
    :correct: b, c
 
    Which of these can you index into?
-

@@ -108,7 +108,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
             print "None"
 
 
-   .. mchoicemf:: waiver502_3
+   .. mchoice:: waiver502_3
       :answer_a: Integer
       :answer_b: Float
       :answer_c: String
@@ -122,7 +122,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       What is the type of "6.2" ?
 
 
-   .. mchoicemf:: waiver502_4
+   .. mchoice:: waiver502_4
       :answer_a: Integer
       :answer_b: Float
       :answer_c: String
@@ -192,7 +192,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       sent = "The Michigan Difference is a wonderful catchphrase."
 
 
-   .. mchoicemf:: waiver502_9
+   .. mchoice:: waiver502_9
       :answer_a: Integer
       :answer_b: Float
       :answer_c: String
@@ -218,7 +218,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       sent_long = "Programming is a useful skill for people to know in this day and age, where computers are an important and vital tool in societies."
 
 
-   .. mchoicemf:: waiver502_11
+   .. mchoice:: waiver502_11
       :answer_a: 5
       :answer_b: 3
       :answer_c: False
@@ -286,7 +286,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       # no more and no fewer pairs
 
 
-   .. mchoicemf:: waiver502_14
+   .. mchoice:: waiver502_14
       :answer_a: True
       :answer_b: False
       :answer_c: 'b'
@@ -318,7 +318,8 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
       num_dict = {"University of Michigan": 19, "month": 4, "student": 3.5, "season": 2, "question": .5}
 
-   .. mchoicema:: waiver502_16
+   .. mchoice:: waiver502_16
+      :multiple_answers:
       :answer_a: There is a list and a dictionary inside of the dictionary
       :answer_b: There is no assignment statement
       :answer_c: Some of the values and keys are missing quotes
@@ -359,7 +360,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       lst_nums = [9, 392, 4, 10, 244, 206, 506, 1983, 1817, 16]
 
 
-   .. mchoicemf:: waiver502_19
+   .. mchoice:: waiver502_19
       :answer_a: Yes, you can index into a dictionary by using their positions.
       :answer_b: Yes, you can index into a dictionary because they are like lists, just with {} brackets instead of [] ones. 
       :answer_c: No, you cannot index into a dictionary because they do not have positions.
@@ -372,7 +373,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
       Can you index into a dictionary?
 
-   .. mchoicemf:: waiver502_20
+   .. mchoice:: waiver502_20
       :answer_a: "Zero"
       :answer_b: Zero
       :answer_c: Error, you cannot index into a dictionary
@@ -426,7 +427,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
       # Save a function call to the variable called excited, this time just changing the number of exclamation marks so that there are five of them.
 
-   .. mchoicemf:: waiver502_24
+   .. mchoice:: waiver502_24
       :answer_a: "You have been late more than tardy."
       :answer_b: "You're less tardy."
       :answer_c: "You are more tardy than late."

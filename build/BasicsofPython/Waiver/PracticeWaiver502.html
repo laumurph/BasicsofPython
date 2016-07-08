@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Practice Assessment for 502 Waiver &mdash; Runestone Interactive Overview</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/livecode.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/lib/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/livecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="../_static/lib/lis.js"></script>
+    <script type="text/javascript" src="../_static/parsons_setup.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-noconflict.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
+    <link rel="prev" title="502 Waiver Exam Page" href="waiver502.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'BasicsofPython';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'BasicsofPython';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head>
+  <body role="document">
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        <a class="navbar-brand" href="../index.html">Basics of Python</a>
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+
+        <!-- social media dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-share-alt" style="opacity: 0.9"></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li>
+        <!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html'>Table of Contents</a></li>
+            
+            <li><a href='/runestone/static/BasicsofPython/genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='/runestone/static/BasicsofPython/navhelp.html'>Navigation Help</a></li>
+            <li><a href='/runestone/static/overview/instructor.html'>Help for Instructors</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/static/help/bugreports.html'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        <!--
+          <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Practice Assessment for 502 Waiver</a></li>
+</ul>
+</ul>
+</li>
+          <li class="divider-vertical"></li>
+        
+        
+          
+  <li id="relations-prev" title="Previous Chapter - 502 Waiver Exam Page" data-toggle="tooltip">
+    <a href="waiver502.html" >
+      <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
+    </a>
+  </li>
+  
+    <li class="divider-vertical"></li>
+  
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content">
+  
+  <div class="section" id="practice-assessment-for-502-waiver">
+<h1>Practice Assessment for 502 Waiver<a class="headerlink" href="#practice-assessment-for-502-waiver" title="Permalink to this headline">¶</a></h1>
+<p>The following is a practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a time limit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you.</p>
+<p>Everything in this chapter can be completed after reading the Basics of Python chapter on this site.</p>
+<p><strong>Instructions:</strong> For questions that require you to write code, write the code you want to save in the provided active code windows. Hidden test code will let you know if you passed or failed, but don&#8217;t hardcode answers to pass the tests; answer the question as posed.</p>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_1">
+            <p>practice_1: What is the output when this code is run?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">first_prog</span> <span class="o">=</span> <span class="s">&quot;Hello, world!&quot;</span>
+<span class="k">print</span> <span class="n">first_prog</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_1_opt_a">"Hello, world!"</li><li data-component="feedback" id="pwaiver_mc_1_opt_a">When printing a string, the quotes are not included in the output.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_1_opt_b">Hello, world!</li><li data-component="feedback" id="pwaiver_mc_1_opt_b">When printing a string, the quotes are not included in the output.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_1_opt_c">An error occurs, you have not initialized the type of the variable.</li><li data-component="feedback" id="pwaiver_mc_1_opt_c">Python does not require that you initialize your variable's type.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_2">
+            <p>practice_2: Which of these are equivalent? (Choose all that apply)</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">var</span> <span class="o">=</span> <span class="s">&quot;Big House!&quot;</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="pwaiver_mc_2_opt_a">var[2]</li><li data-component="feedback" id="pwaiver_mc_2_opt_a">This refers to the substring "g".</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_2_opt_b">var[2:3]</li><li data-component="feedback" id="pwaiver_mc_2_opt_b">This refers to the substring "g", not "g ", because the slice goes up to but does include position 3</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_2_opt_c">var["g"]</li><li data-component="feedback" id="pwaiver_mc_2_opt_c">An Error occurs because when indexing, you must use the numerical position.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_2_opt_d">var[-8]</li><li data-component="feedback" id="pwaiver_mc_2_opt_d">This refers to the substring "g".</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_3">
+            <p>practice_3: What output will be produced by the following code?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">sentence</span> <span class="o">=</span> <span class="s">&quot;Welcome to UMSI.&quot;</span>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_3_opt_a">13</li><li data-component="feedback" id="pwaiver_mc_3_opt_a">Spaces and periods are counted as characters when using the len function.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_b">14</li><li data-component="feedback" id="pwaiver_mc_3_opt_b">Spaces and periods are counted as characters when using the len function.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_3_opt_c">16</li><li data-component="feedback" id="pwaiver_mc_3_opt_c">There are 16 characters.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_d">18</li><li data-component="feedback" id="pwaiver_mc_3_opt_d">Hmm, where did you get the extra 2 characters from?</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_e">An Error occurs, incorrect use of len function.</li><li data-component="feedback" id="pwaiver_mc_3_opt_e">The len function returns the number of characters in a string.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_4">
+            practice_4: Where can you use <code class="docutils literal"><span class="pre">()</span></code> in programming so far? (choose all that apply)
+            <li data-component="answer" data-correct id="pwaiver_mc_4_opt_a">When doing calculations to denote what should be done first.</li><li data-component="feedback" id="pwaiver_mc_4_opt_a">You are able to use them when doing calculations.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_4_opt_b">Creating lists.</li><li data-component="feedback" id="pwaiver_mc_4_opt_b">Lists use [] as brackets, not ().</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_4_opt_c">Calling a function.</li><li data-component="feedback" id="pwaiver_mc_4_opt_c">We use them in order to call or invoke a function.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_4_opt_d">Creating dictionaries.</li><li data-component="feedback" id="pwaiver_mc_4_opt_d">Dictionaries use {} as brackets, not ().</li>
+            
+
+            </ul>
+            <p>Extract the value from the 5th position in the list (the sublist beginning [&#8220;Hello&#8221;, 9.4]) into a variable called <code class="docutils literal"><span class="pre">abc</span></code>.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_1 data-lang="python"    data-timelimit=25000   data-audio=''     >
+zxy = [1, 2, 30, "sims", ["Hello", 9.4, "World", "python"], 502, 506]
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Testing whether abc has the right value.")
+
+myTests().main()
+</textarea>
+
+    <pre data-component="parsons" id="pwaiver_pp_1" data-maxdist=5>
+        <span data-question>practice_5: Arrange the following code snippets into the correct order. The variable new_class is assumed to have already been assigned a value. If it's 506 or more, then it should print "You might be going into 506." If new_class is smaller than 502, it print "Have you applied to the school?" Otherwise, it should print "This is the waiver."
+</span>if new_class >= 506:
+---
+    print "You might be going to 506."
+---
+elif new_class < 502:
+---
+    print "Have you applied to the school?"
+---
+else:
+---
+    print "This is the waiver."</pre>
+    
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_5">
+            practice_6: True or false: you may have an if statement without a corresponding else clause or elif clause.
+            <li data-component="answer"  id="pwaiver_mc_5_opt_a">False</li><li data-component="feedback" id="pwaiver_mc_5_opt_a">You can have an if statement that does not have an elif and/or else.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_5_opt_b">True</li><li data-component="feedback" id="pwaiver_mc_5_opt_b">You can have an if statement that does not have an elif and/or else.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_6">
+            practice_7: Which snippet of code would increment the value of <code class="docutils literal"><span class="pre">num</span></code> by one? (choose all that apply)
+            <li data-component="answer" data-correct id="pwaiver_mc_6_opt_a">num = num + 1</li><li data-component="feedback" id="pwaiver_mc_6_opt_a">correct, num would be reassigned the value of num plus 1.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_6_opt_b">num ++</li><li data-component="feedback" id="pwaiver_mc_6_opt_b">This is not permissible in python, an Error would occur.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_6_opt_c">num ++ 1</li><li data-component="feedback" id="pwaiver_mc_6_opt_c">This is not permissible in python, an Error would occur.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_6_opt_d">num += 1</li><li data-component="feedback" id="pwaiver_mc_6_opt_d">correct, num would be reassigned the value of num plus 1.</li>
+            
+
+            </ul>
+            <p>Using the variable <code class="docutils literal"><span class="pre">wrds</span></code>, how might you grab the last seven characters of a string? Save the last 7 characters of <code class="docutils literal"><span class="pre">wrds</span></code> in a variable called <code class="docutils literal"><span class="pre">plc</span></code> so that when plc is printed out, the output would be: States.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_2 data-lang="python"    data-timelimit=25000   data-audio=''     >
+wrds = "Summer is a warm time of year in the United States."
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(plc, wrds[-7:], "Checking the value of plc.")
+
+myTests().main()
+</textarea>
+
+    <pre data-component="parsons" id="pwaiver_pp_2" data-maxdist=5>
+        <span data-question>practice_8: Organize the code snippets so that if the string "venmo" is an element of the list, then it prints out True, and otherwise, it print False.
+</span>lst = ["I use venmo",
+      "I owe my friend 10 dollars for pizza", 10,
+      {"pizza": 10, "burger": -7.59, "park": -2.25}]
+---
+if "venmo" in lst:
+---
+   print True
+---
+else:
+---
+   print False</pre>
+    
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_7">
+            <p>practice_9: What is the output of this program?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">lst_test</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span> <span class="s">&quot;Good-bye&quot;</span><span class="p">,</span> <span class="s">&quot;Good day&quot;</span><span class="p">,</span> <span class="mf">35.9</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="p">[],</span> <span class="s">&quot;good night&quot;</span><span class="p">]]</span>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst_test</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_7_opt_a">1</li><li data-component="feedback" id="pwaiver_mc_7_opt_a">The last element is a list, so the len function returns the length of that list.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_7_opt_b">4</li><li data-component="feedback" id="pwaiver_mc_7_opt_b">We are using len on a single element of the list lst_test, so it will only be the len of that element, not the whole list.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_7_opt_c">5</li><li data-component="feedback" id="pwaiver_mc_7_opt_c">We are using len on the last element of the list which is four!</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_7_opt_d">8</li><li data-component="feedback" id="pwaiver_mc_7_opt_d">Since we are using negative indicies, we will not use "Good-bye", we will use the last element, which is the list [10, 9, [], "good night"]</li>
+            
+
+            </ul>
+            <p>Using the two variables listed, combine them together and save that in a variable called <code class="docutils literal"><span class="pre">combo</span></code> so that if combo was printed, the resulting string would be &#8220;The arb was a great place to vist this week!&#8221;</p>
+
+<textarea data-component="activecode" id=pwaiver_a_3 data-lang="python"    data-timelimit=25000   data-audio=''     >
+place = "The arb was a great place "
+feel = "to visit this week!"
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(combo, place + feel, "Checking the value of combo.")
+
+myTests().main()
+</textarea>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_8">
+            <p>practice_10: Which snippet of code would produce a list of numbers with as many elements as the string hbe?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">hbe</span> <span class="o">=</span> <span class="s">&quot;Python is great.&quot;</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_8_opt_a">len(range(hbe))</li><li data-component="feedback" id="pwaiver_mc_8_opt_a">range expects a number as input, not a string.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_8_opt_b">range(len(hbe))</li><li data-component="feedback" id="pwaiver_mc_8_opt_b">This will produce a list that contains elements between 0 and 15.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_8_opt_c">range(15)</li><li data-component="feedback" id="pwaiver_mc_8_opt_c">This is an example of why it's better not to hardcode a number when you can have python compute it. There are actually 16 characters in the string.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_8_opt_d">range() = hbe</li><li data-component="feedback" id="pwaiver_mc_8_opt_d">This would cause an error because it attempts to assign, to a function call, the value of a string. That is not permitted in Python.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_8_opt_e">range(hbe)</li><li data-component="feedback" id="pwaiver_mc_8_opt_e">range expects a number as input, not a string.</li>
+            
+
+            </ul>
+            
+    <pre data-component="parsons" id="pwaiver_pp_3" data-maxdist=5>
+        <span data-question>practice_11: Organize the code snippets so that "Go blue!" and "Go maize!" are printed out alternately, 4 times.
+</span>wow = "Go blue!"
+---
+for i in range(4):
+---
+   print wow
+---
+   print "Go maize!"</pre>
+    
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_9">
+            practice_12: Which are the boolean values? (Choose all that apply)
+            <li data-component="answer" data-correct id="pwaiver_mc_9_opt_a">True</li><li data-component="feedback" id="pwaiver_mc_9_opt_a">True with a capital T is the boolean value.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_9_opt_b">true</li><li data-component="feedback" id="pwaiver_mc_9_opt_b">True with a lowercase t is not a boolean, it's a variable in this case.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_9_opt_c">False</li><li data-component="feedback" id="pwaiver_mc_9_opt_c">False with a capital F is the boolean value.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_9_opt_d">false</li><li data-component="feedback" id="pwaiver_mc_9_opt_d">False with a lowercase f is not a boolean, it's a variable in this case.</li>
+            
+
+            </ul>
+            <p>Print the length of each element in the list, using a for loop.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_4 data-lang="python"    data-timelimit=25000   data-audio=''     >
+vals = ["Python", "summer time", "Hello World!", "onomonopia", "Floccinaucinihilipilification", "supercalifragilisticexpialidocious", "wheel", "copyright", "fall", "School of Information"]
+
+=====
+
+print "There are no tests for this. Your output should be 6\n11\..."
+</textarea>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_10">
+            practice_13: How can you add a new key value pair to a dictionary?
+            <li data-component="answer"  id="pwaiver_mc_10_opt_a">dict = value[key]</li><li data-component="feedback" id="pwaiver_mc_10_opt_a">In order to create a new key value pair, the key must be next to the dictionary on the left side in order to reference the value and the value must be on the right side of the assignment statement.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_10_opt_b">dict[key] = value</li><li data-component="feedback" id="pwaiver_mc_10_opt_b">The key is used on the left side of the assignment statement and the value is on the right side of the assignment statement.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_10_opt_c">dict = key[value]</li><li data-component="feedback" id="pwaiver_mc_10_opt_c">In order to create a new key value pair, the key must be next to the dictionary on the left side in order to reference the value and the value must be on the right side of the assignment statement.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_10_opt_d">dict[value] = key</li><li data-component="feedback" id="pwaiver_mc_10_opt_d">In order to create a new key value pair, the key must be on the right side of the assignment statement because it is used to reference the value, which is on the left side of the assignment statement.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_11">
+            practice_14: How are dictionaries accessed?
+            <li data-component="answer"  id="pwaiver_mc_11_opt_a">a numeric index</li><li data-component="feedback" id="pwaiver_mc_11_opt_a">Numeric indices are used for things like strings and lists, but not for dictionaries.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_11_opt_b">a key</li><li data-component="feedback" id="pwaiver_mc_11_opt_b">Dictionaries use keys to access their information.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_11_opt_c">a function call</li><li data-component="feedback" id="pwaiver_mc_11_opt_c">Function calls are not a way to access a dicitonary, they are used to use a function.</li>
+            
+
+            </ul>
+            <p>Create a dictionary called <code class="docutils literal"><span class="pre">extra</span></code> that has the key-value pairs: &#8220;Black&#8221; and &#8220;White&#8221;, 14.9 and 0, &#8220;milkshake&#8221; and 390, and 29 and an empty list.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_5 data-lang="python"    data-timelimit=25000   data-audio=''     >
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "Checking whether extra has the right keys.")
+      self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "Checking whether extra has the right values.")
+
+
+myTests().main()
+</textarea>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_12">
+            <p>practice_15: What part of a dictionary is printed out by the following statements?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mydict</span> <span class="o">=</span> <span class="p">{</span><span class="bp">True</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s">&quot;lol&quot;</span><span class="p">:</span> <span class="s">&quot;laugh out loud&quot;</span><span class="p">,</span>
+         <span class="s">&quot;bark&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">;</span> <span class="mi">20</span><span class="p">,</span>
+         <span class="s">&quot;wonderful: [&quot;</span><span class="n">incredible</span><span class="s">&quot;, &quot;</span><span class="n">fabulous</span><span class="s">&quot;, &quot;</span><span class="n">awful</span> <span class="n">nice</span><span class="s">&quot;]}</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">mydict</span><span class="p">:</span>
+   <span class="k">print</span> <span class="n">item</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_12_opt_a">the last value</li><li data-component="feedback" id="pwaiver_mc_12_opt_a">This will print out all of the keys, not just a single value.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_12_opt_b">the last key</li><li data-component="feedback" id="pwaiver_mc_12_opt_b">This will print out all of the keys, not just the last one, because the print statement is indented as part of the for loop.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_12_opt_c">all the values</li><li data-component="feedback" id="pwaiver_mc_12_opt_c">Iteration on a dictionary is implicitly iteration on the keys, not the values.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_12_opt_d">all the keys</li><li data-component="feedback" id="pwaiver_mc_12_opt_d">item refers to a different key in the dictionary on each iteration.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_12_opt_e">the word item</li><li data-component="feedback" id="pwaiver_mc_12_opt_e">item is not a string this case; it is a variable that refers to the keys in the dictionary.</li>
+            
+
+            </ul>
+            <p>Create a list of numbers starting at 15 and goes to 145 and assign that to a variable called <code class="docutils literal"><span class="pre">big_lst</span></code>.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_6 data-lang="python"    data-timelimit=25000   data-audio=''     >
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Checking value of big_lst")
+
+myTests().main()
+</textarea>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_13">
+            <p>practice_16: What prints out when this code is run?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="k">print</span> <span class="n">a</span>
+</pre></div>
+</div>
+
+            <li data-component="answer" data-correct id="pwaiver_mc_13_opt_a">True</li><li data-component="feedback" id="pwaiver_mc_13_opt_a">a is reassigned the value produced by the statement b == 10, which checks equivalency and is thus True.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_13_opt_b">False</li><li data-component="feedback" id="pwaiver_mc_13_opt_b">a is reassigned the value produced by the statement b == 10, which checks equivalency and is thus True because b has been reassigned the value of a (which was 10).</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_13_opt_c">10</li><li data-component="feedback" id="pwaiver_mc_13_opt_c">a is reassigned the value produced by the statement b == 10, which checks equivalency and is thus True because b has been reassigned the value of a (which had been 10 earlier).</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_13_opt_d">4</li><li data-component="feedback" id="pwaiver_mc_13_opt_d">a is reassigned the value produced by the statement b == 10, which checks equivalency and is thus True because b has been reassigned the value of a (which had been 10 earlier).</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_13_opt_e">An Error occurs.</li><li data-component="feedback" id="pwaiver_mc_13_opt_e">This code does not produce an error in Python.</li>
+            
+
+            </ul>
+            <p>Write code so that if the value of the variable <code class="docutils literal"><span class="pre">new</span></code> is an element of the list <code class="docutils literal"><span class="pre">tester</span></code> then the variable <code class="docutils literal"><span class="pre">old</span></code> is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.</p>
+
+<textarea data-component="activecode" id=pwaiver_a_7 data-lang="python"    data-timelimit=25000   data-audio=''     >
+new = "win"
+tester = ["won", 19.2, "lost", 2.0, "winner", "victory", "Gold cup"]
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(old, False, "Checking value of old.")
+
+myTests().main()
+</textarea>
+
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_14">
+            practice_17: Is indentation in Python important?
+            <li data-component="answer" data-correct id="pwaiver_mc_14_opt_a">Yes, indentation can change the meaning of a program.</li><li data-component="feedback" id="pwaiver_mc_14_opt_a">Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_14_opt_b">It helps so that programs look nice and organized, but has no effect on the execution of the program.</li><li data-component="feedback" id="pwaiver_mc_14_opt_b">Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_14_opt_c">No, indentation is not important or necessary in Python.</li><li data-component="feedback" id="pwaiver_mc_14_opt_c">Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_15">
+            practice_18: Which of these can you index into?
+            <li data-component="answer"  id="pwaiver_mc_15_opt_a">Dictionaries</li><li data-component="feedback" id="pwaiver_mc_15_opt_a">Dictionaries are not able to be indexed into.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_15_opt_b">Strings</li><li data-component="feedback" id="pwaiver_mc_15_opt_b">You are able to index into strings.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_15_opt_c">Lists</li><li data-component="feedback" id="pwaiver_mc_15_opt_c">You are able to index into lists.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_15_opt_d">Integers</li><li data-component="feedback" id="pwaiver_mc_15_opt_d">Integers are not able to be indexed into.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_15_opt_e">Floats</li><li data-component="feedback" id="pwaiver_mc_15_opt_e">Floats are not able to be indexed into.</li>
+            
+
+            </ul>
+            </div>
+
+
+  
+      
+  <li id="relations-prev" class="navLink" title='Previous Section - 502 Waiver Exam Page' data-toggle="tooltip">
+    <a href="waiver502.html" >
+      <i class='prevNav glyphicon glyphicon-chevron-left'></i>
+    </a>
+  </li>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="waiver502.html" ></a>
+  
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+  
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015 Lauren.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.1.
+    </p>
+  </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

@@ -28,7 +28,7 @@ Everything in this chapter can be completed after reading the Basics of Python c
 
 **Instructions:** For questions that require you to write code, write the code you want to save in the provided active code windows. Hidden test code will let you know if you passed or failed, but don't hardcode answers to pass the tests; answer the question as posed.
 
-.. mchoicemf:: pwaiver_mc_1
+.. mchoice:: pwaiver_mc_1
    :answer_a: "Hello, world!"
    :answer_b: Hello, world!
    :answer_c: An error occurs, you have not initialized the type of the variable.
@@ -44,7 +44,11 @@ Everything in this chapter can be completed after reading the Basics of Python c
       first_prog = "Hello, world!"
       print first_prog
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_2
+=======
+.. mchoice:: pwaiver_mc_2
+>>>>>>> master
    :multiple_answers:
    :answer_a: var[2]
    :answer_b: var[2:3]
@@ -62,7 +66,11 @@ Everything in this chapter can be completed after reading the Basics of Python c
 
       var = "Big House!"
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_3
+=======
+.. mchoice:: pwaiver_mc_3
+>>>>>>> master
    :answer_a: 13
    :answer_b: 14
    :answer_c: 16
@@ -82,7 +90,11 @@ Everything in this chapter can be completed after reading the Basics of Python c
       sentence = "Welcome to UMSI."
       print len(sentence)
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_4
+=======
+.. mchoice:: pwaiver_mc_4
+>>>>>>> master
    :multiple_answers:
    :answer_a: When doing calculations to denote what should be done first.
    :answer_b: Creating lists.
@@ -131,7 +143,7 @@ Extract the value from the 5th position in the list (the sublist beginning ["Hel
    =====
        print "This is the waiver."
 
-.. mchoicemf:: pwaiver_mc_5
+.. mchoice:: pwaiver_mc_5
    :answer_a: False
    :answer_b: True
    :feedback_a: You can have an if statement that does not have an elif and/or else.
@@ -140,7 +152,11 @@ Extract the value from the 5th position in the list (the sublist beginning ["Hel
 
    True or false: you may have an if statement without a corresponding else clause or elif clause.
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_6
+=======
+.. mchoice:: pwaiver_mc_6
+>>>>>>> master
    :multiple_answers:
    :answer_a: num = num + 1
    :answer_b: num ++
@@ -189,7 +205,7 @@ Using the variable ``wrds``, how might you grab the last seven characters of a s
    =====
       print False
 
-.. mchoicemf:: pwaiver_mc_7
+.. mchoice:: pwaiver_mc_7
    :answer_a: 1
    :answer_b: 4
    :answer_c: 5
@@ -227,7 +243,11 @@ Using the two variables listed, combine them together and save that in a variabl
 
    myTests().main()
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_8
+=======
+.. mchoice:: pwaiver_mc_8
+>>>>>>> master
    :answer_a: len(range(hbe))
    :answer_b: range(len(hbe))
    :answer_c: range(15)
@@ -259,7 +279,11 @@ Using the two variables listed, combine them together and save that in a variabl
    =====
       print "Go maize!"
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_9
+=======
+.. mchoice:: pwaiver_mc_9
+>>>>>>> master
    :multiple_answers:
    :answer_a: True
    :answer_b: true
@@ -285,7 +309,7 @@ Print the length of each element in the list, using a for loop.
    print "There are no tests for this. Your output should be 6\n11\..."
 
 
-.. mchoicemf:: pwaiver_mc_10
+.. mchoice:: pwaiver_mc_10
    :answer_a: dict = value[key]
    :answer_b: dict[key] = value
    :answer_c: dict = key[value]
@@ -298,7 +322,11 @@ Print the length of each element in the list, using a for loop.
 
    How can you add a new key value pair to a dictionary?
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_11
+=======
+.. mchoice:: pwaiver_mc_11
+>>>>>>> master
    :answer_a: a numeric index
    :answer_b: a key
    :answer_c: a function call
@@ -328,7 +356,7 @@ Create a dictionary called ``extra`` that has the key-value pairs: "Black" and "
    myTests().main()
 
 
-.. mchoicemf:: pwaiver_mc_12
+.. mchoice:: pwaiver_mc_12
    :answer_a: the last value
    :answer_b: the last key
    :answer_c: all the values
@@ -367,7 +395,7 @@ Create a list of numbers starting at 15 and goes to 145 and assign that to a var
 
    myTests().main()
 
-.. mchoicemf:: pwaiver_mc_13
+.. mchoice:: pwaiver_mc_13
    :answer_a: True
    :answer_b: False
    :answer_c: 10
@@ -409,18 +437,30 @@ Write code so that if the value of the variable ``new`` is an element of the lis
 
    myTests().main()
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_14
+=======
+.. mchoice:: pwaiver_mc_14
+>>>>>>> master
    :answer_a: Yes, indentation can change the meaning of a program.
    :answer_b: It helps so that programs look nice and organized, but has no effect on the execution of the program.
    :answer_c: No, indentation is not important or necessary in Python.
    :feedback_a: Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included. 
    :feedback_b: Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.
+<<<<<<< HEAD
    :feedback_c: Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.
+=======
+   :feedback_d: Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.
+>>>>>>> master
    :correct: a
 
    Is indentation in Python important?
 
+<<<<<<< HEAD
 .. mchoicemf:: pwaiver_mc_15
+=======
+.. mchoice:: pwaiver_mc_15
+>>>>>>> master
    :multiple_answers:
    :answer_a: Dictionaries
    :answer_b: Strings

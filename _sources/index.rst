@@ -1,11 +1,14 @@
 .. _t_o_c:
 
+
+This site is for incoming MSI and MHI students. If you are able to go through the material in the chapter on Basics of Programming, and then confidently answer the questions on the practice assessment, you should be ready to pass the similar waiver exam that will be offered once you arrive on campus. That will allow you to skip 502 and take 506 in the fall, and thus give you a chance to get to the full range of technical courses in our curriculum by your second year.
+
 Table of Contents
 :::::::::::::::::
 
 
-Basics of Programming
-:::::::::::::::::::::
+Basics of Programming in Python (2.7)
+:::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -52,5 +55,4 @@ Assessment
 .. toctree::
    :maxdepth: 1
 
-   Waiver/waiver502.rst
    Waiver/PracticeWaiver502.rst

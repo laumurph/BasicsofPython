@@ -78,6 +78,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
             print "None"
 
 
+<<<<<<< HEAD
    .. mchoicemf:: waiver502_3
       :answer_a: Items that you need for creating the list produced by the range function.
       :answer_b: The elements of the list produced by the range function call.
@@ -90,11 +91,23 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       In the following for loop, what does ``item`` represent?
 
       .. sourcecode:: python
+=======
+   .. mchoice:: waiver502_3
+      :answer_a: Integer
+      :answer_b: Float
+      :answer_c: String
+      :answer_d: List
+      :feedback_a: a working
+      :feedback_b: b working
+      :feedback_c: c working
+      :feedback_d: d working
+      :correct: c
+>>>>>>> master
 
          for item in range(3,15):
 
 
-   .. mchoicemf:: waiver502_4
+   .. mchoice:: waiver502_4
       :answer_a: Integer
       :answer_b: Float
       :answer_c: String
@@ -187,6 +200,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       myTests().main()
 
 
+<<<<<<< HEAD
    .. mchoicemf:: waiver502_9
       :answer_a: String
       :answer_b: List
@@ -195,6 +209,20 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       :feedback_b: Due to the way that L was indexed in to, the resulting type will be a list.
       :feedback_c: Unless the element that is indexed in to is a dictionary, the type of the value will not be a dictionary. In this case, even though the element is a string, the way that it was indexed will result in a list with the single element.
       :correct: b
+=======
+   .. mchoice:: waiver502_9
+      :answer_a: Integer
+      :answer_b: Float
+      :answer_c: String
+      :answer_d: List
+      :answer_e: Dictionary
+      :feedback_a: A working
+      :feedback_b: B working
+      :feedback_c: C working
+      :feedback_d: D working
+      :feedback_e: E working
+      :correct: d
+>>>>>>> master
 
       After the following Python code is executed, what will the the type of L[4:5] if L = ['p', 'y', 't', 'h', 'o', 'n']?
 
@@ -220,8 +248,13 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
       myTests().main()
 
+<<<<<<< HEAD
    .. mchoicemf:: waiver502_11
       :answer_a: 6
+=======
+   .. mchoice:: waiver502_11
+      :answer_a: 5
+>>>>>>> master
       :answer_b: 3
       :answer_c: False
       :answer_d: True
@@ -290,7 +323,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       myTests().main()
 
 
-   .. mchoicemf:: waiver502_14
+   .. mchoice:: waiver502_14
       :answer_a: True
       :answer_b: False
       :answer_c: 'b'
@@ -333,7 +366,11 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       print "This is my " + num + "th favorite day of the month."
 
 
+<<<<<<< HEAD
    .. mchoicemf:: waiver502_16
+=======
+   .. mchoice:: waiver502_16
+>>>>>>> master
       :multiple_answers:
       :answer_a: There is a list and a dictionary inside of the dictionary
       :answer_b: There is no assignment statement
@@ -392,7 +429,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
             print "div by 3: ", num
 
 
-   .. mchoicemf:: waiver502_19
+   .. mchoice:: waiver502_19
       :answer_a: Yes, you can index into a dictionary by using their positions.
       :answer_b: Yes, you can index into a dictionary because they are like lists, just with {} brackets instead of [] ones. 
       :answer_c: No, you cannot index into a dictionary because they do not have positions.
@@ -405,7 +442,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
       Can you index into a dictionary?
 
-   .. mchoicemf:: waiver502_20
+   .. mchoice:: waiver502_20
       :answer_a: "Zero"
       :answer_b: Zero
       :answer_c: Error, you cannot index into a dictionary.
@@ -470,7 +507,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
          var = "Go Blue!"
 
 
-   .. mchoicemf:: waiver502_24
+   .. mchoice:: waiver502_24
       :answer_a: "You have been late more than tardy."
       :answer_b: "You're less tardy."
       :answer_c: "You are more tardy than late."

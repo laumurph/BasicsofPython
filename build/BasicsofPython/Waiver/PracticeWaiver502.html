@@ -307,19 +307,20 @@
   
   <div class="section" id="practice-assessment-for-502-waiver">
 <h1>Practice Assessment for 502 Waiver<a class="headerlink" href="#practice-assessment-for-502-waiver" title="Permalink to this headline">¶</a></h1>
-<p>The following is the practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a timelimit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you. This is also an indication of how well you will be prepared to take 506, should you decide to waive out of 502. Content for the assessment is based on the Basics of Python chapter.</p>
-<p><strong>Instructions:</strong> For questions that require you to write code, write the code you want to save in the provided active code windows. Tests written will let you know if you passed or failed. Do not hardcode answers.</p>
+<p>The following is a practice assessment for the 502 Waiver. This should take about 30 minutes to complete. While this is not a timed assessment, the final assessment will have a time limit of 30 minutes, so keeping track of how long it takes will be a good indicator of long the final assessment will take you.</p>
+<p>Everything in this chapter can be completed after reading the Basics of Python chapter on this site.</p>
+<p><strong>Instructions:</strong> For questions that require you to write code, write the code you want to save in the provided active code windows. Hidden test code will let you know if you passed or failed, but don&#8217;t hardcode answers to pass the tests; answer the question as posed.</p>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_1">
-            <p>pwaiver502_1: What is the output when this code is run?</p>
+            <p>practice_1: What is the output when this code is run?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">first_prog</span> <span class="o">=</span> <span class="s">&quot;Hello, world!&quot;</span>
 <span class="k">print</span> <span class="n">first_prog</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="pwaiver_mc_1_opt_a">"Hello, world!"</li><li data-component="feedback" id="pwaiver_mc_1_opt_a">When printing a string, the quotes are not included.</li>
+            <li data-component="answer"  id="pwaiver_mc_1_opt_a">"Hello, world!"</li><li data-component="feedback" id="pwaiver_mc_1_opt_a">When printing a string, the quotes are not included in the output.</li>
             
-            <li data-component="answer" data-correct id="pwaiver_mc_1_opt_b">Hello, world!</li><li data-component="feedback" id="pwaiver_mc_1_opt_b">When printing a string, the quotes are not included.</li>
+            <li data-component="answer" data-correct id="pwaiver_mc_1_opt_b">Hello, world!</li><li data-component="feedback" id="pwaiver_mc_1_opt_b">When printing a string, the quotes are not included in the output.</li>
             
             <li data-component="answer"  id="pwaiver_mc_1_opt_c">An error occurs, you have not initialized the type of the variable.</li><li data-component="feedback" id="pwaiver_mc_1_opt_c">Python does not require that you initialize your variable's type.</li>
             
@@ -327,14 +328,14 @@
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_2">
-            <p>pwaiver502_2: Which of these are equivalent? (Choose all that apply)</p>
+            <p>practice_2: Which of these are equivalent? (Choose all that apply)</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">var</span> <span class="o">=</span> <span class="s">&quot;Big House!&quot;</span>
 </pre></div>
 </div>
 
             <li data-component="answer" data-correct id="pwaiver_mc_2_opt_a">var[2]</li><li data-component="feedback" id="pwaiver_mc_2_opt_a">This refers to the substring "g".</li>
             
-            <li data-component="answer"  id="pwaiver_mc_2_opt_b">var[2:3]</li><li data-component="feedback" id="pwaiver_mc_2_opt_b">Instead of being a string type, this one is a list because it used slicing.</li>
+            <li data-component="answer" data-correct id="pwaiver_mc_2_opt_b">var[2:3]</li><li data-component="feedback" id="pwaiver_mc_2_opt_b">This refers to the substring "g", not "g ", because the slice goes up to but does include position 3</li>
             
             <li data-component="answer"  id="pwaiver_mc_2_opt_c">var["g"]</li><li data-component="feedback" id="pwaiver_mc_2_opt_c">An Error occurs because when indexing, you must use the numerical position.</li>
             
@@ -343,8 +344,28 @@
 
             </ul>
             
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_3">
+            <p>practice_3: What output will be produced by the following code?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">sentence</span> <span class="o">=</span> <span class="s">&quot;Welcome to UMSI.&quot;</span>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="pwaiver_mc_3_opt_a">13</li><li data-component="feedback" id="pwaiver_mc_3_opt_a">Spaces and periods are counted as characters when using the len function.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_b">14</li><li data-component="feedback" id="pwaiver_mc_3_opt_b">Spaces and periods are counted as characters when using the len function.</li>
+            
+            <li data-component="answer" data-correct id="pwaiver_mc_3_opt_c">16</li><li data-component="feedback" id="pwaiver_mc_3_opt_c">There are 16 characters.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_d">18</li><li data-component="feedback" id="pwaiver_mc_3_opt_d">Hmm, where did you get the extra 2 characters from?</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_3_opt_e">An Error occurs, incorrect use of len function.</li><li data-component="feedback" id="pwaiver_mc_3_opt_e">The len function returns the number of characters in a string.</li>
+            
+
+            </ul>
+            
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_4">
-            pwaiver502_3: Where can you use <code class="docutils literal"><span class="pre">()</span></code> in programming so far? (choose all that apply)
+            practice_4: Where can you use <code class="docutils literal"><span class="pre">()</span></code> in programming so far? (choose all that apply)
             <li data-component="answer" data-correct id="pwaiver_mc_4_opt_a">When doing calculations to denote what should be done first.</li><li data-component="feedback" id="pwaiver_mc_4_opt_a">You are able to use them when doing calculations.</li>
             
             <li data-component="answer"  id="pwaiver_mc_4_opt_b">Creating lists.</li><li data-component="feedback" id="pwaiver_mc_4_opt_b">Lists use [] as brackets, not ().</li>
@@ -355,7 +376,7 @@
             
 
             </ul>
-            <p>Save the value of the (human) 5th position in the list into a variable called <code class="docutils literal"><span class="pre">abc</span></code>.</p>
+            <p>Extract the value from the 5th position in the list (the sublist beginning [&#8220;Hello&#8221;, 9.4]) into a variable called <code class="docutils literal"><span class="pre">abc</span></code>.</p>
 
 <textarea data-component="activecode" id=pwaiver_a_1 data-lang="python"    data-timelimit=25000   data-audio=''     >
 zxy = [1, 2, 30, "sims", ["Hello", 9.4, "World", "python"], 502, 506]
@@ -367,16 +388,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Your assignment does not align with the correct position in the list.")
+      self.assertEqual(abc, ["Hello", 9.4, "World", "python"], "Testing whether abc has the right value.")
 
 myTests().main()
 </textarea>
 
     <pre data-component="parsons" id="pwaiver_pp_1" data-maxdist=5>
-        <span data-question>pwaiver502_4: Arrange the following code snipits into the correct order so that if new_class is larger than or equal to 506 then it will print "You might be going into 506." If new_class is smaller than 502, print "Have you applied to the school?" Otherwise, print "This is the waiver."
-</span>new_class = 502
----
-if new_class >= 506:
+        <span data-question>practice_5: Arrange the following code snippets into the correct order. The variable new_class is assumed to have already been assigned a value. If it's 506 or more, then it should print "You might be going into 506." If new_class is smaller than 502, it print "Have you applied to the school?" Otherwise, it should print "This is the waiver."
+</span>if new_class >= 506:
 ---
     print "You might be going to 506."
 ---
@@ -389,7 +408,7 @@ else:
     print "This is the waiver."</pre>
     
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_5">
-            pwaiver502_5: True or false, you may have an if statement without an elif and/or else?
+            practice_6: True or false: you may have an if statement without a corresponding else clause or elif clause.
             <li data-component="answer"  id="pwaiver_mc_5_opt_a">False</li><li data-component="feedback" id="pwaiver_mc_5_opt_a">You can have an if statement that does not have an elif and/or else.</li>
             
             <li data-component="answer" data-correct id="pwaiver_mc_5_opt_b">True</li><li data-component="feedback" id="pwaiver_mc_5_opt_b">You can have an if statement that does not have an elif and/or else.</li>
@@ -398,7 +417,7 @@ else:
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_6">
-            pwaiver502_6: Which snipit of code would increment the value of <code class="docutils literal"><span class="pre">num</span></code> by one? (choose all that apply)
+            practice_7: Which snippet of code would increment the value of <code class="docutils literal"><span class="pre">num</span></code> by one? (choose all that apply)
             <li data-component="answer" data-correct id="pwaiver_mc_6_opt_a">num = num + 1</li><li data-component="feedback" id="pwaiver_mc_6_opt_a">correct, num would be reassigned the value of num plus 1.</li>
             
             <li data-component="answer"  id="pwaiver_mc_6_opt_b">num ++</li><li data-component="feedback" id="pwaiver_mc_6_opt_b">This is not permissible in python, an Error would occur.</li>
@@ -421,13 +440,13 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(plc, wrds[-7:], "plc does not contain the correct characters.")
+      self.assertEqual(plc, wrds[-7:], "Checking the value of plc.")
 
 myTests().main()
 </textarea>
 
     <pre data-component="parsons" id="pwaiver_pp_2" data-maxdist=5>
-        <span data-question>pwaiver502_7: Organize the code snipits so that if the string "venmo" is an element of the list, then it prints out True, otherwise, it print False.
+        <span data-question>practice_8: Organize the code snippets so that if the string "venmo" is an element of the list, then it prints out True, and otherwise, it print False.
 </span>lst = ["I use venmo",
       "I owe my friend 10 dollars for pizza", 10,
       {"pizza": 10, "burger": -7.59, "park": -2.25}]
@@ -441,7 +460,7 @@ else:
    print False</pre>
     
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_7">
-            <p>pwaiver502_8: What is returned at the end of this program?</p>
+            <p>practice_9: What is the output of this program?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">lst_test</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Hello&quot;</span><span class="p">,</span> <span class="s">&quot;Good-bye&quot;</span><span class="p">,</span> <span class="s">&quot;Good day&quot;</span><span class="p">,</span> <span class="mf">35.9</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="p">[],</span> <span class="s">&quot;good night&quot;</span><span class="p">]]</span>
 <span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst_test</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
@@ -470,30 +489,32 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(combo, place + feel, "You have not correctly concatinated the two variables.")
+      self.assertEqual(combo, place + feel, "Checking the value of combo.")
 
 myTests().main()
 </textarea>
 
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_8">
-            <p>pwaiver502_9: Which snipit of code would produce a list of numbers with as many elements as this string without hardcoding? (Choose all that apply)</p>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_8">
+            <p>practice_10: Which snippet of code would produce a list of numbers with as many elements as the string hbe?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">hbe</span> <span class="o">=</span> <span class="s">&quot;Python is great.&quot;</span>
 </pre></div>
 </div>
 
-            <li data-component="answer" data-correct id="pwaiver_mc_8_opt_a">range(0, hbe)</li><li data-component="feedback" id="pwaiver_mc_8_opt_a">This will produce a list that contains elements between 0 and 15.</li>
+            <li data-component="answer"  id="pwaiver_mc_8_opt_a">len(range(hbe))</li><li data-component="feedback" id="pwaiver_mc_8_opt_a">range expects a number as input, not a string.</li>
             
-            <li data-component="answer" data-correct id="pwaiver_mc_8_opt_b">range(hbe)</li><li data-component="feedback" id="pwaiver_mc_8_opt_b">This will produce a list that contains elements between 0 and 15.</li>
+            <li data-component="answer" data-correct id="pwaiver_mc_8_opt_b">range(len(hbe))</li><li data-component="feedback" id="pwaiver_mc_8_opt_b">This will produce a list that contains elements between 0 and 15.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_8_opt_c">range(16)</li><li data-component="feedback" id="pwaiver_mc_8_opt_c">While this would produce the correct length of a list of numbers, this is considered hardcoding. Imagine we didn't know what the string was, how would you do it then?</li>
+            <li data-component="answer"  id="pwaiver_mc_8_opt_c">range(15)</li><li data-component="feedback" id="pwaiver_mc_8_opt_c">This is an example of why it's better not to hardcode a number when you can have python compute it. There are actually 16 characters in the string.</li>
             
             <li data-component="answer"  id="pwaiver_mc_8_opt_d">range() = hbe</li><li data-component="feedback" id="pwaiver_mc_8_opt_d">This would cause an error because it attempts to assign, to a function call, the value of a string. That is not permitted in Python.</li>
+            
+            <li data-component="answer"  id="pwaiver_mc_8_opt_e">range(hbe)</li><li data-component="feedback" id="pwaiver_mc_8_opt_e">range expects a number as input, not a string.</li>
             
 
             </ul>
             
     <pre data-component="parsons" id="pwaiver_pp_3" data-maxdist=5>
-        <span data-question>pwaiver502_10: Organize the code snipits so that "Go blue!" and "Go maize!" are printed out alternately, 4 times.
+        <span data-question>practice_11: Organize the code snippets so that "Go blue!" and "Go maize!" are printed out alternately, 4 times.
 </span>wow = "Go blue!"
 ---
 for i in range(4):
@@ -503,7 +524,7 @@ for i in range(4):
    print "Go maize!"</pre>
     
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_9">
-            pwaiver502_11: Which are the boolean values? (Choose all that apply)
+            practice_12: Which are the boolean values? (Choose all that apply)
             <li data-component="answer" data-correct id="pwaiver_mc_9_opt_a">True</li><li data-component="feedback" id="pwaiver_mc_9_opt_a">True with a capital T is the boolean value.</li>
             
             <li data-component="answer"  id="pwaiver_mc_9_opt_b">true</li><li data-component="feedback" id="pwaiver_mc_9_opt_b">True with a lowercase t is not a boolean, it's a variable in this case.</li>
@@ -514,25 +535,18 @@ for i in range(4):
             
 
             </ul>
-            <p>Save the length of each element in the list in a new list called <code class="docutils literal"><span class="pre">len_vals</span></code>.</p>
+            <p>Print the length of each element in the list, using a for loop.</p>
 
 <textarea data-component="activecode" id=pwaiver_a_4 data-lang="python"    data-timelimit=25000   data-audio=''     >
 vals = ["Python", "summer time", "Hello World!", "onomonopia", "Floccinaucinihilipilification", "supercalifragilisticexpialidocious", "wheel", "copyright", "fall", "School of Information"]
 
 =====
 
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-   def testOne(self):
-      self.assertEqual(len_vals, [6, 11, 12, 10, 29, 34, 5, 9, 4, 21], "You have not correctly created a list with the lengths of the elements in the vals variable.")
-
-myTests().main()
+print "There are no tests for this. Your output should be 6\n11\..."
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_10">
-            pwaiver502_12: How can you add a new key value pair to a dictionary?
+            practice_13: How can you add a new key value pair to a dictionary?
             <li data-component="answer"  id="pwaiver_mc_10_opt_a">dict = value[key]</li><li data-component="feedback" id="pwaiver_mc_10_opt_a">In order to create a new key value pair, the key must be next to the dictionary on the left side in order to reference the value and the value must be on the right side of the assignment statement.</li>
             
             <li data-component="answer" data-correct id="pwaiver_mc_10_opt_b">dict[key] = value</li><li data-component="feedback" id="pwaiver_mc_10_opt_b">The key is used on the left side of the assignment statement and the value is on the right side of the assignment statement.</li>
@@ -545,12 +559,12 @@ myTests().main()
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_11">
-            pwaiver502_13: How are dictionaries accessed?
-            <li data-component="answer"  id="pwaiver_mc_11_opt_a">indecies</li><li data-component="feedback" id="pwaiver_mc_11_opt_a">Indecies are used for things like strings and lists, but not for dictionaries.</li>
+            practice_14: How are dictionaries accessed?
+            <li data-component="answer"  id="pwaiver_mc_11_opt_a">a numeric index</li><li data-component="feedback" id="pwaiver_mc_11_opt_a">Numeric indices are used for things like strings and lists, but not for dictionaries.</li>
             
-            <li data-component="answer" data-correct id="pwaiver_mc_11_opt_b">keys</li><li data-component="feedback" id="pwaiver_mc_11_opt_b">Dictionaries use keys to access their information.</li>
+            <li data-component="answer" data-correct id="pwaiver_mc_11_opt_b">a key</li><li data-component="feedback" id="pwaiver_mc_11_opt_b">Dictionaries use keys to access their information.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_11_opt_c">function calls</li><li data-component="feedback" id="pwaiver_mc_11_opt_c">Function calls are not a way to access a dicitonary, they are used to use a function.</li>
+            <li data-component="answer"  id="pwaiver_mc_11_opt_c">a function call</li><li data-component="feedback" id="pwaiver_mc_11_opt_c">Function calls are not a way to access a dicitonary, they are used to use a function.</li>
             
 
             </ul>
@@ -564,15 +578,15 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "The dictionary was not set up correctly.")
-      self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "The values of your dictionary do not match what is expected.")
+      self.assertEqual(sorted(extra), sorted({"Black": "White", 14.9: 0, "milkshake": 390, 29: []}), "Checking whether extra has the right keys.")
+      self.assertEqual(sorted(extra.values()), sorted(["White", 0, 390, []]), "Checking whether extra has the right values.")
 
 
 myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_12">
-            <p>pwaiver502_14: What part of a dictionary is printed out at the end of the following statements?</p>
+            <p>practice_15: What part of a dictionary is printed out by the following statements?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">mydict</span> <span class="o">=</span> <span class="p">{</span><span class="bp">True</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s">&quot;lol&quot;</span><span class="p">:</span> <span class="s">&quot;laugh out loud&quot;</span><span class="p">,</span>
          <span class="s">&quot;bark&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">;</span> <span class="mi">20</span><span class="p">,</span>
          <span class="s">&quot;wonderful: [&quot;</span><span class="n">incredible</span><span class="s">&quot;, &quot;</span><span class="n">fabulous</span><span class="s">&quot;, &quot;</span><span class="n">awful</span> <span class="n">nice</span><span class="s">&quot;]}</span>
@@ -581,15 +595,15 @@ myTests().main()
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="pwaiver_mc_12_opt_a">the last value</li><li data-component="feedback" id="pwaiver_mc_12_opt_a">This will print out all of the keys, not one value. If we wanted to print out the 'last' value, we would have had to use the key that was associated with it to access the value and it would not have occured in the for loop.</li>
+            <li data-component="answer"  id="pwaiver_mc_12_opt_a">the last value</li><li data-component="feedback" id="pwaiver_mc_12_opt_a">This will print out all of the keys, not just a single value.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_12_opt_b">the last key</li><li data-component="feedback" id="pwaiver_mc_12_opt_b">This will print out all of the keys. If we wanted to print out the 'last' one just once, we wouldn't have put the print item statement in the for loop.</li>
+            <li data-component="answer"  id="pwaiver_mc_12_opt_b">the last key</li><li data-component="feedback" id="pwaiver_mc_12_opt_b">This will print out all of the keys, not just the last one, because the print statement is indented as part of the for loop.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_12_opt_c">the values</li><li data-component="feedback" id="pwaiver_mc_12_opt_c">Item refers to the keys in the dictionary. If we wanted to print the values, then we would have needed to use the keys to access the values.</li>
+            <li data-component="answer"  id="pwaiver_mc_12_opt_c">all the values</li><li data-component="feedback" id="pwaiver_mc_12_opt_c">Iteration on a dictionary is implicitly iteration on the keys, not the values.</li>
             
-            <li data-component="answer" data-correct id="pwaiver_mc_12_opt_d">the keys</li><li data-component="feedback" id="pwaiver_mc_12_opt_d">Item refers to the keys in the dictionary.</li>
+            <li data-component="answer" data-correct id="pwaiver_mc_12_opt_d">all the keys</li><li data-component="feedback" id="pwaiver_mc_12_opt_d">item refers to a different key in the dictionary on each iteration.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_12_opt_e">the word item</li><li data-component="feedback" id="pwaiver_mc_12_opt_e">Item is not a string this case, it is a variable that refers to the keys in the dictionary.</li>
+            <li data-component="answer"  id="pwaiver_mc_12_opt_e">the word item</li><li data-component="feedback" id="pwaiver_mc_12_opt_e">item is not a string this case; it is a variable that refers to the keys in the dictionary.</li>
             
 
             </ul>
@@ -603,13 +617,13 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Your list does not cover the correct range")
+      self.assertEqual(big_lst, [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145], "Checking value of big_lst")
 
 myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_13">
-            <p>pwaiver502_15: What prints out at the end of this code?</p>
+            <p>practice_16: What prints out when this code is run?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
@@ -626,11 +640,11 @@ myTests().main()
             
             <li data-component="answer"  id="pwaiver_mc_13_opt_d">4</li><li data-component="feedback" id="pwaiver_mc_13_opt_d">a is reassigned the value produced by the statement b == 10, which checks equivalency and is thus True because b has been reassigned the value of a (which had been 10 earlier).</li>
             
-            <li data-component="answer"  id="pwaiver_mc_13_opt_e">An Error occurs.</li><li data-component="feedback" id="pwaiver_mc_13_opt_e"></li>
+            <li data-component="answer"  id="pwaiver_mc_13_opt_e">An Error occurs.</li><li data-component="feedback" id="pwaiver_mc_13_opt_e">This code does not produce an error in Python.</li>
             
 
             </ul>
-            <p>Write code so that if the contents of the variable <code class="docutils literal"><span class="pre">new</span></code> are inside of the list <code class="docutils literal"><span class="pre">tester</span></code> then the variable <code class="docutils literal"><span class="pre">old</span></code> is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.</p>
+            <p>Write code so that if the value of the variable <code class="docutils literal"><span class="pre">new</span></code> is an element of the list <code class="docutils literal"><span class="pre">tester</span></code> then the variable <code class="docutils literal"><span class="pre">old</span></code> is assigned the value of True and if it is not inside of tester, then old is assigned the value of False.</p>
 
 <textarea data-component="activecode" id=pwaiver_a_7 data-lang="python"    data-timelimit=25000   data-audio=''     >
 new = "win"
@@ -643,40 +657,24 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(old, False, "The value of old has not been assigned correctly.")
+      self.assertEqual(old, False, "Checking value of old.")
 
 myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="pwaiver_mc_14">
-            pwaiver502_16: Is indentation in Python important?
-            <li data-component="answer" data-correct id="pwaiver_mc_14_opt_a">Yes, it is an important part of Python and is necessary to include.</li><li data-component="feedback" id="pwaiver_mc_14_opt_a">Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included.</li>
+            practice_17: Is indentation in Python important?
+            <li data-component="answer" data-correct id="pwaiver_mc_14_opt_a">Yes, indentation can change the meaning of a program.</li><li data-component="feedback" id="pwaiver_mc_14_opt_a">Indentation is necessary in Python. In fact, errors occur when necessary indentation is not included.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_14_opt_b">Yes, it helps so that programs look nice and organized.</li><li data-component="feedback" id="pwaiver_mc_14_opt_b">Though it is important for Python, it's not needed in order to have the code look pretty and orderly. It is actually required.</li>
+            <li data-component="answer"  id="pwaiver_mc_14_opt_b">It helps so that programs look nice and organized, but has no effect on the execution of the program.</li><li data-component="feedback" id="pwaiver_mc_14_opt_b">Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.</li>
             
-            <li data-component="answer"  id="pwaiver_mc_14_opt_c">No, it is only for aesthetics and is not necessary.</li><li data-component="feedback" id="pwaiver_mc_14_opt_c">Indentation is for aesthetics, though it can make reading programs easier for some people. Python requires that you include indentation when it is necessary.</li>
-            
-            <li data-component="answer"  id="pwaiver_mc_14_opt_d">No, indentation is not important or necessary in Python, only optional.</li><li data-component="feedback" id="pwaiver_mc_14_opt_d">Indentation is not optional in Python. It is needed to run the program and throws up an error if indentation is missing from its propper places.</li>
+            <li data-component="answer"  id="pwaiver_mc_14_opt_c">No, indentation is not important or necessary in Python.</li><li data-component="feedback" id="pwaiver_mc_14_opt_c">Indentation marks the beginning and ends of code blocks for if statements and for loops, among other things.</li>
             
 
             </ul>
             
-    <pre data-component="parsons" id="pwaiver_pp_4" data-maxdist=5>
-        <span data-question>pwaiver502_17: Organize the code snipits so that each name is saved as a value in a list called "a_names" if it starts with an "A".
-</span>names = ["Jessica", "Ahmed", "Lela",
-    "Alex", "Rasheed", "Yuri", "Mariana",
-   "Akira", "Rei", "Aretta", "James", "Eya"]
----
-a_names = []
----
-for n in names:
----
-   if n[0] == "A":
----
-      a_names = a_names + [n]</pre>
-    
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="pwaiver_mc_15">
-            pwaiver502_18: Which of these can you index into?
+            practice_18: Which of these can you index into?
             <li data-component="answer"  id="pwaiver_mc_15_opt_a">Dictionaries</li><li data-component="feedback" id="pwaiver_mc_15_opt_a">Dictionaries are not able to be indexed into.</li>
             
             <li data-component="answer" data-correct id="pwaiver_mc_15_opt_b">Strings</li><li data-component="feedback" id="pwaiver_mc_15_opt_b">You are able to index into strings.</li>

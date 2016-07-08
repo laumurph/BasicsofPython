@@ -54,4 +54,3 @@ Assessment
 
    Waiver/waiver502.rst
    Waiver/PracticeWaiver502.rst
-   Waiver/waiver502draft.rst

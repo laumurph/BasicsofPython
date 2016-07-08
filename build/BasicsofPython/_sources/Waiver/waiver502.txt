@@ -32,40 +32,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 502 Waiver Exam
 ---------------
 
-.. .. datafile  about_programming.txt
-..    :hide:
-
-..    Computer programming (often shortened to programming) is a process that leads from an
-..    original formulation of a computing problem to executable programs. It involves
-..    activities such as analysis, understanding, and generically solving such problems
-..    resulting in an algorithm, verification of requirements of the algorithm including its
-..    correctness and its resource consumption, implementation (or coding) of the algorithm in
-..    a target programming language, testing, debugging, and maintaining the source code,
-..    implementation of the build system and management of derived artefacts such as machine
-..    code of computer programs. The algorithm is often only represented in human-parseable
-..    form and reasoned about using logic. Source code is written in one or more programming
-..    languages (such as C++, C#, Java, Python, Smalltalk, JavaScript, etc.). The purpose of
-..    programming is to find a sequence of instructions that will automate performing a
-..    specific task or solve a given problem. The process of programming thus often requires
-..    expertise in many different subjects, including knowledge of the application domain,
-..    specialized algorithms and formal logic.
-..    Within software engineering, programming (the implementation) is regarded as one phase in a software development process. There is an on-going debate on the extent to which
-..    the writing of programs is an art form, a craft, or an engineering discipline. In
-..    general, good programming is considered to be the measured application of all three,
-..    with the goal of producing an efficient and evolvable software solution (the criteria
-..    for "efficient" and "evolvable" vary considerably). The discipline differs from many
-..    other technical professions in that programmers, in general, do not need to be licensed
-..    or pass any standardized (or governmentally regulated) certification tests in order to
-..    call themselves "programmers" or even "software engineers." Because the discipline
-..    covers many areas, which may or may not include critical applications, it is debatable
-..    whether licensing is required for the profession as a whole. In most cases, the
-..    discipline is self-governed by the entities which require the programming, and sometimes
-..    very strict environments are defined (e.g. United States Air Force use of AdaCore and
-..    security clearance). However, representing oneself as a "professional software engineer"
-..    without a license from an accredited institution is illegal in many parts of the world.
-
-**Instructions:** For questions that ask you to write code, write the code you want to save in the provided boxes. The last code you have saved for each one by the deadline is what will be graded. Instructions are comments in the code window. *Do not* hit **Finish Exam** until you are finished. 
-
+**Instructions:** For questions that ask you to write code, write the code you want to save in the provided active code windows. The last code you have saved for each problem by the deadline is what will be graded. Instructions are comments in the code window. *Do not* hit **Finish Exam** until you are finished. 
 
 
 .. timed:: timed1
@@ -81,12 +48,15 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       
 
       =====
-      import test
-      try: 
-         test.testEqual(uni, "University of Michigan")
-      except:
-         print "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'"
 
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(uni, "University of Michigan", "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'")
+
+      myTests().main()
 
    .. parsonsprob:: waiver502_2
       
@@ -109,17 +79,19 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
 
    .. mchoicemf:: waiver502_3
-      :answer_a: Integer
-      :answer_b: Float
-      :answer_c: String
-      :answer_d: List
-      :feedback_a: a working
-      :feedback_b: b working
-      :feedback_c: c working
-      :feedback_d: d working
-      :correct: c
+      :answer_a: Items that you need for creating the list produced by the range function.
+      :answer_b: The elements of the list produced by the range function call.
+      :answer_c: Nothing, that is an improper use of a for loop.
+      :feedback_a: The only input that the range function needs is between the parenthesis in the function call, item is not used for that.
+      :feedback_b: Elem represents each element in the list that is created by the range function call.
+      :feedback_c: The range function can be used as the object that is iterated over in a for loop.
+      :correct: b
 
-      What is the type of "6.2" ?
+      In the following for loop, what does ``item`` represent?
+
+      .. sourcecode:: python
+
+         for item in range(3,15):
 
 
    .. mchoicemf:: waiver502_4
@@ -128,82 +100,101 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       :answer_c: String
       :answer_d: List
       :answer_e: Dictionary
-      :feedback_a: a working
-      :feedback_b: b working
-      :feedback_c: c working
-      :feedback_d: d working
-      :feedback_e: e working
+      :feedback_a: The human fifth position in the list refers to [6], which is a list. The contents of the list are a subsection and their type is not accounted for when refering to the entire list object.
+      :feedback_b: The human fifth position in the list refers to [6], which is a list.
+      :feedback_c: The human fifth position in the list refers to [6], which is a list.
+      :feedback_d: The human fifth position in the list refers to [6], which is a list.
+      :feedback_e: The human fifth position in the list refers to [6], which is a list, as denoted by the square [] brackets.
       :correct: d
 
-      What is value of the (human) fifth position in this list: ["School", "Ann Arbor", "93.0", 38, [6], "Information", {3: "three", "Six": 6, 109: 109.0}]?
+      What is type of the value of the (human) fifth position in this list: ["School", "Ann Arbor", "93.0", 38, [6], "Information", {3: "three", "Six": 6, 109: 109.0}]?
 
 
-   .. activecode:: waiver502_5
-      :nocodelens:
+   .. parsonsprob:: waiver502_5
 
-      # Write code so that var is printed out 8 times, each time
-      # on a new line, without writing 8 print statements (hardcoding).
+      Arrange the following code snipits so that var is printed out 8 times, each time on a new line.
 
+      -----
       var = "9"
-   
+      =====
+      for pos in range(8):
+      =====
+         print var
+
 
    .. activecode:: waiver502_6
       :nocodelens:
 
-      # Print out the type of each item in the list on a separate line.
+      # If the type of the last variable in lst is a float or an integer,
+      # then assign the value of the_type to be True, otherwise assign
+      # it to be False. the_type is currently assigned the value None.
 
-       lst = [["Dog", "cat", 8], "pet", {"Lassie": "dog", "Porky": "pig"}, 10, 9, 8.99]
+      lst = [["Dog", "cat", 8], "pet", {"Lassie": "dog", "Porky": "pig"}, 10, 9, 8.99]
+      the_type = None
+
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(the_type, True, "The if/else conditional statement has not been set up correctly or the value of the_type is not a Boolean.")
+
+      myTests().main()
 
 
    .. activecode:: waiver502_7
       :nocodelens:
-      :include: addi_functions
 
+      # Write code to assign the variable abc the value that is produced
+      # when the length of a string is the input of the range function. 
+      # In this case, when the length of the string "Hello" is used,
+      # a list is produced and is saved as the value of the variable abc.
 
+      wrd = "Hello"
 
-      #len and range of 5 as a replacement for this, length of list
-
-      # We are providing a function called square() which takes as
-      # input, one integer and returns the square of that integer 
-      # value. Write code to assign the variable abc the value of 285
-      # squared divided by 3. Use the square function in your answer.
-
-      def square(num):
-        return num**2
-
-      abc = ""
 
       =====
-      import test
 
-      try: 
-         test.testEqual(uni, "University of Michigan")
-      except:
-         print "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'"
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(abc, [0, 1, 2, 3, 4], "abc has not been assigned the correct value. There may be impropper use of the len or range functions.")
+
+      myTests().main()
  
 
    .. activecode:: waiver502_8
       :nocodelens:
 
-      # Write a statement to print the second to last word in any
-      # string, assuming it has at least two words. For example,
-      # when sent is defined, you would be printing out the word wonderful. 
+      # Write a statement to assign the second to last word in this
+      # string to the variable called scri.
 
-      sent = "The Michigan Difference is a wonderful catchphrase."
+      sent = "The Michigan Difference is a wonderful motto."
+
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(scri, "wonderful", "scri has not been correctly assigned the value of 'wonderful', possibly due to incorrect indexing.")
+
+      myTests().main()
 
 
    .. mchoicemf:: waiver502_9
-      :answer_a: Integer
-      :answer_b: Float
-      :answer_c: String
-      :answer_d: List
-      :answer_e: Dictionary
-      :feedback_a: A working
-      :feedback_b: B working
-      :feedback_c: C working
-      :feedback_d: D working
-      :feedback_e: E working
-      :correct: d
+      :answer_a: String
+      :answer_b: List
+      :answer_c: Dictionary
+      :feedback_a: Due to the way that L was indexed in to, the resulting type will be a list.
+      :feedback_b: Due to the way that L was indexed in to, the resulting type will be a list.
+      :feedback_c: Unless the element that is indexed in to is a dictionary, the type of the value will not be a dictionary. In this case, even though the element is a string, the way that it was indexed will result in a list with the single element.
+      :correct: b
 
       After the following Python code is executed, what will the the type of L[4:5] if L = ['p', 'y', 't', 'h', 'o', 'n']?
 
@@ -211,25 +202,36 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. activecode:: waiver502_10
       :nocodelens:
 
-      # Write code so that the number of times the letter **a**
-      # is written in the string provided is saved as the value
-      # of a variable called num_of_a.
+      # Write code so that if the letter q is in the string
+      # then the program should assign the string "q is present"
+      # to a variable called sent_ans, otherwise, it should assign
+      # that variable the value of "q is not present".
 
       sent_long = "Programming is a useful skill for people to know in this day and age, where computers are an important and vital tool in societies."
 
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(sent_ans, "q is not present", "Testing whether sent_ans has been correctly set up and assigned the right value.")
+
+      myTests().main()
 
    .. mchoicemf:: waiver502_11
-      :answer_a: 5
+      :answer_a: 6
       :answer_b: 3
       :answer_c: False
       :answer_d: True
       :answer_e: None of the above, there will be an error.
-      :feedback_a: A working
-      :feedback_b: B working
-      :feedback_c: C working
-      :feedback_d: D working
-      :feedback_e: E working
-      :correct: d
+      :feedback_a: First was compared against sec, not combined with sec + 1, it is still 3.
+      :feedback_b: First still is assigned the value of 3, even after the comparison against sec + 1.
+      :feedback_c: First is not reassigned the value of the comparison of first and sec + 1, which would have been True, not False, so first is still 3.
+      :feedback_d: First is not reassigned the value of the comparison of first and sec + 1, so it cannot be True. First is still 3.
+      :feedback_e: No error occurs, all of the lines are permissible in python.
+      :correct: b
       
       What will print out at the end of this section of code?
         
@@ -268,22 +270,24 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. activecode:: waiver502_13
       :nocodelens:
 
-      # Using the dictionary provided, print out each key 
-      # value pair on a separate line, but only if the value
-      # contains the letter **m**.
+      # Using the dictionary provided, add an extra
+      # key value pair, whose key is the string festival 
+      # and whose value is the string summer fest.
 
       word_dict = {"yellow": "maize", "blue": "same thing", "NQ": "North Quad", "UMSI": "University of Michigan School of Information", "A2": "Ann Arbor", "Big House": "The Football Stadium", "Language": "Python", "Fishbowl": "Computing Site"}
 
-      # It should look something like this:
+      =====
 
-      # yellow maize
-      # blue same thing
-      # UMSI University of Michigan School of Information
-      # Big House The Football Stadium
-      # Fishbowl Computing Site
+      from unittest.gui import TestCaseGui
 
-      # the order may be different, but there should be 
-      # no more and no fewer pairs
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(sorted(word_dict), sorted({"yellow": "maize", "blue": "same thing", "NQ": "North Quad", "UMSI": "University of Michigan School of Information", "A2": "Ann Arbor", "Big House": "The Football Stadium", "Language": "Python", "Fishbowl": "Computing Site", "festival": "summer fest"}), "Checking whether word_dict has the right keys.")
+            self.assertEqual(sorted(word_dict.values()), sorted("maize", "same thing", North Quad", "University of Michigan School of Information", "Ann Arbor", "The Football Stadium", "Python", "Computing Site", "summer fest"), "Checking whether word_dict has the right values.")
+
+
+      myTests().main()
 
 
    .. mchoicemf:: waiver502_14
@@ -292,11 +296,11 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       :answer_c: 'b'
       :answer_d: 4
       :answer_e: Error occurs
-      :feedback_a: A working
-      :feedback_b: B working
-      :feedback_c: C working
-      :feedback_d: D working
-      :feedback_e: E working
+      :feedback_a: Using the in opperator on dictionaries checks the keys, so since 4 is not a key, it will return False.
+      :feedback_b: Using the in opperator on dictionaries checks the keys, so since 4 is not a key, it will return False.
+      :feedback_c: When using the in opperator on dictionaries, it checks the keys and would not find the 4. Additionally, the in opperator returns a boolean value, not the key associated with a value.
+      :feedback_d: When using the in opperator on dictionaries, it checks the keys and would not find the 4. Additionally, the in opperator returns a boolean value, not the value it checks for.
+      :feedback_e: The in opperator is permissible in python, and returns a boolean value.
       :correct: b
 
       What would occur when this code is printed?
@@ -307,27 +311,39 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
          d['a'] = 5
          d['b'] = 4
          d[3] = 'b'
-         print 4 in python
+         print 4 in d
 
 
-   .. activecode:: waiver502_15
-      :nocodelens:
+   .. parsonsprob:: waiver502_15
 
-      # Accumulate the values so that the total number is displayed in output like so: This is my 29th favorite day of the month.
-      # Save this in a variable called **fav_day**.
+      Arrange the code snipits so that the values of the dictionary are added together
+      so that the total number is displayed in a string that reads "This is my 29th
+      favorite day of the month." and is printed out.
 
-      num_dict = {"University of Michigan": 19, "month": 4, "student": 3.5, "season": 2, "question": .5}
+      -----
+      num_dict = {"University of Michigan": 19, "month": 4,
+                 "student": 3.5, "season": 2, "question": .5}
+      
+      num = 0
+      =====
+      for key in num_dict:
+      =====
+         num = num + num_dict[key]
+      =====
+      print "This is my " + num + "th favorite day of the month."
 
-   .. mchoicema:: waiver502_16
+
+   .. mchoicemf:: waiver502_16
+      :multiple_answers:
       :answer_a: There is a list and a dictionary inside of the dictionary
       :answer_b: There is no assignment statement
       :answer_c: Some of the values and keys are missing quotes
       :answer_d: There's a comma missing
       :answer_e: a number is a key, which is not allowed
       :feedback_a: Not quite right, you are allowed to have dictionaries and lists inside of other lists and dictionaries.
-      :feedback_b: 
-      :feedback_c: 
-      :feedback_d: 
+      :feedback_b: Yes, there is no assignment statement, thus there is no way to use the dictionary later on.
+      :feedback_c: Yes, some of the values and keys that are supposed to be strings are missing quotes around them, thus the dictionary will think that they are missing variables and cause an error.
+      :feedback_d: Yes, there is a comma missing, which would cause an error when trying to run. Syntax is important to running programs.
       :feedback_e: Not quite right, numbers are allowed to be keys and values.
       :correct: b,c,d
 
@@ -340,34 +356,51 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
    .. activecode:: waiver502_17
       :nocodelens:
-      :include: addi_functions
 
-      # We have provided a function called **random_digit()** which takes no inputs and produces a number between 0 and 9
-      # Using this function, print whether or not the resulting number is above 6, below 3, or inbetween. 
-      # If it is above 6, print "The random number generated is above 6", if it is below 3, print "The random number 
-      # generated is below 3", and if it is between, print "The random number generated is between 3 and 6".
+      # assign to the variable desti, strings that describe
+      # whether or not the length of "Pip install" is above 15,
+      # below 8, or inbetween. If it is above 15, assign it 
+      # "The lenth of the string is greater than 15",
+      # if it is below 8, assign it "The lenth of the string is 
+      # less than 8", and if it is between, assign it 
+      # "The length of the string is between 15 and 8".
 
-   .. activecode:: waiver502_18
-      :nocodelens:
-      :include: addi_functions
+      check = "Pip install"
 
-      # Iterate through the list of integers so that, using the **square()** function, if the resulting value is 
-      # divisable by 4 with zero remaining, then the original number is saved into a new list called **div_four**, 
-      # otherwise save it to a new list called **not_div_four**.
+      =====
 
+      from unittest.gui import TestCaseGui
 
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(desti, "The length of the string is between 15 and 8", "desti may have been assigned the incorrect string.")
+
+      myTests().main()
+
+   .. parsonsprob:: waiver502_18
+
+      Arrange the code snipits so that the list of integers is iterated through so that if the resulting value is divisable by 3 with zero remaining, then "div by 3: " and the number is printed, otherwise nothing happens.
+
+      -----
       lst_nums = [9, 392, 4, 10, 244, 206, 506, 1983, 1817, 16]
+      =====
+      for nums in lst_nums:
+      =====
+         if num % 3 == 0:
+      =====
+            print "div by 3: ", num
 
 
    .. mchoicemf:: waiver502_19
       :answer_a: Yes, you can index into a dictionary by using their positions.
       :answer_b: Yes, you can index into a dictionary because they are like lists, just with {} brackets instead of [] ones. 
       :answer_c: No, you cannot index into a dictionary because they do not have positions.
-      :answer_d: No, you cannot index into a dictionary because the {} brakets are different than then [] ones.
+      :answer_d: No, you cannot index into a dictionary because the {} brackets are different than then [] ones.
       :feedback_a: Dictionaries don't have positions that you can use to index.
       :feedback_b: Dictionaries aren't quite like lists, they are unordered whereas lists are ordered.
-      :feedback_c: Correct!
-      :feedback_d: They are different kinds of brakets, but that's not the reason why you can't index into a dictionary.
+      :feedback_c: You cannot index into a dictionary because thery lack positions to use for numeric indices.
+      :feedback_d: They are different kinds of brackets, but that's not the reason why you can't index into a dictionary.
       :correct: c
 
       Can you index into a dictionary?
@@ -375,10 +408,10 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. mchoicemf:: waiver502_20
       :answer_a: "Zero"
       :answer_b: Zero
-      :answer_c: Error, you cannot index into a dictionary
+      :answer_c: Error, you cannot index into a dictionary.
       :feedback_a: Not quite, the quotes will not be printed out.
-      :feedback_b: Correct!
-      :feedback_c: No, this is not indexing into a dictionary, this refers to the value that is associated with the key.
+      :feedback_b: The value of the key will be printed out without quotes.
+      :feedback_c: No, this is not indexing into a dictionary, this is refering to the value that is associated with the key.
       :correct: b
 
       What is printed by the following statement?
@@ -392,39 +425,50 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. activecode:: waiver502_21
       :nocodelens:
 
-      # Write code so that the values of this list of students from different programs are increased by one.
-      # This should work for any time it is asked (do not hardcode).
+      # Write code so that the length of the list 
+      # is assigned to a variable called student_len.
 
       students = [52, 45, 90, 18, 150, 390, 1029]
 
 
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(student_len, len(students), "You incorrectly assigned the value of student_len to be the length of students.")
+
+      myTests().main()ac
+
    .. activecode:: waiver502_22
       :nocodelens:
 
-      # Write code to increase the number of students who are in Information so that there are 490 students.
+      # Write code to change the number of students 
+      # who are in Information so that there are 490 students.
 
-      enrollment = {"architecture": 638, "InterArts": 15, "Law": 885, "Pharmacy": 420, "Information": 459, "LSA": 18290, "Engineering": 8723, "Social Work": "472"}
-
-
-   .. activecode:: waiver502_23
-      :nocodelens:
-
-      # We have provided you with another function, this one is called **greeting()** and takes two optional inputs, the 
-      # first is a string for the name and the second is an integer for the number of exclamation marks. 
-      # Using variables called **default**, **dean**, and **excited**, save different uses of the function **greeting()**
-      
-      def greeting(name, num):
-         return "Hello,", name + ", and welcome to umich" + num * "!"
-
-      #### DO NOT change the function definition above this line (OK to add comments)
-
-      # Save a basic function call to the variable called default, so that its value is the string "Hello, Student, and welcome to umich!"
+      enrollment = {"Architecture": 638, "InterArts": 15, "Law": 885, "Pharmacy": 420, "Information": 459, "LSA": 18290, "Engineering": 8723, "Social Work": "472"}
 
 
-      # Save a funtion call to the variable called dean, this time using the name of the dean of the school, Thomas Finholt, for the greetings.
+   .. mchoicemf:: waiver502_23
+      :multiple_answers:
+      :answer_a: var[4:5]
+      :answer_b: var[4]
+      :answer_c: var["l"]
+      :answer_d: var[-3]
+      :feedback_a: This refers to the substring "l", not "lu", because the slice goes up to but does include position 5.
+      :feedback_b: This refers to the substring "l".
+      :feedback_c: An Error occurs because when indexing, you must use the numerical position.
+      :feedback_d: This refers to the substring "g".
+      :correct: a,b,d
 
+      Which of these are equivalent? (Choose all that apply)
 
-      # Save a function call to the variable called excited, this time just changing the number of exclamation marks so that there are five of them.
+      .. sourcecode:: python
+
+         var = "Go Blue!"
+
 
    .. mchoicemf:: waiver502_24
       :answer_a: "You have been late more than tardy."
@@ -456,82 +500,16 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
             detention = "You're less tardy."
 
 
-.. .. activecode addi_functions
-.. :nopre:
-.. :hidecode:
+   .. mchoicemf:: waiver502_25
+      :answer_a: range(23, 90)
+      :answer_b: range(22, 90)
+      :answer_c: range(23, 89)
+      :answer_d: range(22, 89)
+      :feedback_a: Range, when given two inputs, will be inclusive of the first and exclusive of the second, so this will work!
+      :feedback_b: Range, when given two inputs, will be inclusive of the first and exclusive of the second.
+      :feedback_c: Range, when given two inputs, will be inclusive of the first and exclusive of the second.
+      :feedback_d: Range, when given two inputs, will be inclusive of the first and exclusive of the second.
+      :correct: a
 
-.. def square(num):
-..   return num**2
-
-.. def random_digit():
-..   import random
-..   return random.choice([0,1,2,3,4,5,6,7,8,9])
-
-
-
-.. .. mchoicemf waiver502_1
-..    :answer_a: Syntax error
-..    :answer_b: Analytic error
-..    :answer_c: Runtime error
-..    :answer_d: Semantic error
-..    :feedback_a: A semantic error is an error in logic. In this case the program does not produce the correct output because the problem is not solved correctly. This would be considered a run-time error.
-..    :feedback_b: A semantic error is an error in logic. In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error.
-..    :feedback_c: This will produce the wrong answer because the programmer implemented the solution incorrectly.  This is a semantic error.
-..    :feedback_d: Cri
-..    :correct: b
-
-..    Which one of these is not an error?
-
-.. .. mchoicema waiver502_3
-.. :answer_a: Allows programers to see information from programs.
-.. :answer_b: Learn what the type of a value is by visually seeing it.
-.. :answer_c: Print out the program to a printer.
-.. :answer_d: Displays a value on the screen.
-.. :feedback_a: ahhhhh
-.. :feedback_b: cri
-.. :feedback_c: wll
-.. :feedback_d: yay
-.. :correct: a,d
-
-.. What are the benefits of print statments? (choose all that are correct)
-
-.. .. mchoicemf waiver502_8
-..    :answer_a: None, an error occurs.
-..    :answer_b: 7
-..    :answer_c: 7.0
-..    :answer_d: 1
-..    :feedback_a: a working
-..    :feedback_b: b working
-..    :feedback_c: c working
-..    :feedback_d: d working
-..    :correct: b
-
-..    What is the value of the expression 36 // 5?
-
-.. Correct the following code so that the file is opened in order to read contents. Then, add to the code so that it prints out a list where each element of the list is a line of the text file.
-
-.. .. activecode waiver502_13
-..    :nocodelens:
-      
-..    file_name = about_programing.txt
-..    f = open(f, 'r')
-
-
-.. Write code so that if the word **computer** (and any variation such as computers, computing, etc.) is in the file about_programming.txt, it would print out the line that it was on.
-
-.. .. activecode waiver502_15
-..    :nocodelens:
-
-.. for waiver502_17 if for some reason it extended...
-.. =====
-.. accum = 0
-.. keys = dict.keys()
-.. best_key = keys[0]
-.. =====
-.. for key in keys:
-.. =====
-..    if dict[key] > dict[best_key]:
-.. =====
-..       best_key = key
-
+      How would you use the range function to create a list that spans from 23 up to and including 89?
 

@@ -325,7 +325,7 @@
 </ul>
 <div class="section" id="waiver-exam">
 <h2>502 Waiver Exam<a class="headerlink" href="#waiver-exam" title="Permalink to this headline">¶</a></h2>
-<p><strong>Instructions:</strong> For questions that ask you to write code, write the code you want to save in the provided boxes. The last code you have saved for each one by the deadline is what will be graded. Instructions are comments in the code window. <em>Do not</em> hit <strong>Finish Exam</strong> until you are finished.</p>
+<p><strong>Instructions:</strong> For questions that ask you to write code, write the code you want to save in the provided active code windows. The last code you have saved for each problem by the deadline is what will be graded. Instructions are comments in the code window. <em>Do not</em> hit <strong>Finish Exam</strong> until you are finished.</p>
 
     <ul data-component="timedAssessment" data-time=30 id="timed1"   >
     
@@ -336,11 +336,15 @@
 
 
 =====
-import test
-try:
-   test.testEqual(uni, "University of Michigan")
-except:
-   print "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'"
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(uni, "University of Michigan", "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'")
+
+myTests().main()
 </textarea>
 
     <pre data-component="parsons" id="waiver502_2" data-maxdist=5>
@@ -360,101 +364,135 @@ for item in full_list:
       print "None"</pre>
     
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_3">
-            waiver502_2: What is the type of &#8220;6.2&#8221; ?
-            <li data-component="answer"  id="waiver502_3_opt_a">Integer</li><li data-component="feedback" id="waiver502_3_opt_a">a working</li>
+            <p>waiver502_2: In the following for loop, what does <code class="docutils literal"><span class="pre">item</span></code> represent?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">15</span><span class="p">):</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="waiver502_3_opt_a">Items that you need for creating the list produced by the range function.</li><li data-component="feedback" id="waiver502_3_opt_a">The only input that the range function needs is between the parenthesis in the function call, item is not used for that.</li>
             
-            <li data-component="answer"  id="waiver502_3_opt_b">Float</li><li data-component="feedback" id="waiver502_3_opt_b">b working</li>
+            <li data-component="answer" data-correct id="waiver502_3_opt_b">The elements of the list produced by the range function call.</li><li data-component="feedback" id="waiver502_3_opt_b">Elem represents each element in the list that is created by the range function call.</li>
             
-            <li data-component="answer" data-correct id="waiver502_3_opt_c">String</li><li data-component="feedback" id="waiver502_3_opt_c">c working</li>
-            
-            <li data-component="answer"  id="waiver502_3_opt_d">List</li><li data-component="feedback" id="waiver502_3_opt_d">d working</li>
+            <li data-component="answer"  id="waiver502_3_opt_c">Nothing, that is an improper use of a for loop.</li><li data-component="feedback" id="waiver502_3_opt_c">The range function can be used as the object that is iterated over in a for loop.</li>
             
 
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_4">
-            waiver502_3: What is value of the (human) fifth position in this list: [&#8220;School&#8221;, &#8220;Ann Arbor&#8221;, &#8220;93.0&#8221;, 38, [6], &#8220;Information&#8221;, {3: &#8220;three&#8221;, &#8220;Six&#8221;: 6, 109: 109.0}]?
-            <li data-component="answer"  id="waiver502_4_opt_a">Integer</li><li data-component="feedback" id="waiver502_4_opt_a">a working</li>
+            waiver502_3: What is type of the value of the (human) fifth position in this list: [&#8220;School&#8221;, &#8220;Ann Arbor&#8221;, &#8220;93.0&#8221;, 38, [6], &#8220;Information&#8221;, {3: &#8220;three&#8221;, &#8220;Six&#8221;: 6, 109: 109.0}]?
+            <li data-component="answer"  id="waiver502_4_opt_a">Integer</li><li data-component="feedback" id="waiver502_4_opt_a">The human fifth position in the list refers to [6], which is a list. The contents of the list are a subsection and their type is not accounted for when refering to the entire list object.</li>
             
-            <li data-component="answer"  id="waiver502_4_opt_b">Float</li><li data-component="feedback" id="waiver502_4_opt_b">b working</li>
+            <li data-component="answer"  id="waiver502_4_opt_b">Float</li><li data-component="feedback" id="waiver502_4_opt_b">The human fifth position in the list refers to [6], which is a list.</li>
             
-            <li data-component="answer"  id="waiver502_4_opt_c">String</li><li data-component="feedback" id="waiver502_4_opt_c">c working</li>
+            <li data-component="answer"  id="waiver502_4_opt_c">String</li><li data-component="feedback" id="waiver502_4_opt_c">The human fifth position in the list refers to [6], which is a list.</li>
             
-            <li data-component="answer" data-correct id="waiver502_4_opt_d">List</li><li data-component="feedback" id="waiver502_4_opt_d">d working</li>
+            <li data-component="answer" data-correct id="waiver502_4_opt_d">List</li><li data-component="feedback" id="waiver502_4_opt_d">The human fifth position in the list refers to [6], which is a list.</li>
             
-            <li data-component="answer"  id="waiver502_4_opt_e">Dictionary</li><li data-component="feedback" id="waiver502_4_opt_e">e working</li>
+            <li data-component="answer"  id="waiver502_4_opt_e">Dictionary</li><li data-component="feedback" id="waiver502_4_opt_e">The human fifth position in the list refers to [6], which is a list, as denoted by the square [] brackets.</li>
             
 
             </ul>
             
-<textarea data-component="activecode" id=waiver502_5 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Write code so that var is printed out 8 times, each time
-# on a new line, without writing 8 print statements (hardcoding).
-
-var = "9"
-</textarea>
-
+    <pre data-component="parsons" id="waiver502_5" data-maxdist=5>
+        <span data-question>waiver502_4: Arrange the following code snipits so that var is printed out 8 times, each time on a new line.
+</span>var = "9"
+---
+for pos in range(8):
+---
+   print var</pre>
+    
 <textarea data-component="activecode" id=waiver502_6 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Print out the type of each item in the list on a separate line.
+# If the type of the last variable in lst is a float or an integer,
+# then assign the value of the_type to be True, otherwise assign
+# it to be False. the_type is currently assigned the value None.
 
- lst = [["Dog", "cat", 8], "pet", {"Lassie": "dog", "Porky": "pig"}, 10, 9, 8.99]
-</textarea>
-
-<textarea data-component="activecode" id=waiver502_7 data-lang="python"   data-include=addi_functions data-timelimit=25000   data-audio=''     >
-#len and range of 5 as a replacement for this, length of list
-
-# We are providing a function called square() which takes as
-# input, one integer and returns the square of that integer
-# value. Write code to assign the variable abc the value of 285
-# squared divided by 3. Use the square function in your answer.
-
-def square(num):
-  return num**2
-
-abc = ""
+lst = [["Dog", "cat", 8], "pet", {"Lassie": "dog", "Porky": "pig"}, 10, 9, 8.99]
+the_type = None
 
 =====
-import test
 
-try:
-   test.testEqual(uni, "University of Michigan")
-except:
-   print "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'"
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(the_type, True, "The if/else conditional statement has not been set up correctly or the value of the_type is not a Boolean.")
+
+myTests().main()
+</textarea>
+
+<textarea data-component="activecode" id=waiver502_7 data-lang="python"    data-timelimit=25000   data-audio=''     >
+# Write code to assign the variable abc the value that is produced
+# when the length of a string is the input of the range function.
+# In this case, when the length of the string "Hello" is used,
+# a list is produced and is saved as the value of the variable abc.
+
+wrd = "Hello"
+
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(abc, [0, 1, 2, 3, 4], "abc has not been assigned the correct value. There may be impropper use of the len or range functions.")
+
+myTests().main()
 </textarea>
 
 <textarea data-component="activecode" id=waiver502_8 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Write a statement to print the second to last word in any
-# string, assuming it has at least two words. For example,
-# when sent is defined, you would be printing out the word wonderful.
+# Write a statement to assign the second to last word in this
+# string to the variable called scri.
 
-sent = "The Michigan Difference is a wonderful catchphrase."
+sent = "The Michigan Difference is a wonderful motto."
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(scri, "wonderful", "scri has not been correctly assigned the value of 'wonderful', possibly due to incorrect indexing.")
+
+myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_9">
-            waiver502_4: After the following Python code is executed, what will the the type of L[4:5] if L = [&#8216;p&#8217;, &#8216;y&#8217;, &#8216;t&#8217;, &#8216;h&#8217;, &#8216;o&#8217;, &#8216;n&#8217;]?
-            <li data-component="answer"  id="waiver502_9_opt_a">Integer</li><li data-component="feedback" id="waiver502_9_opt_a">A working</li>
+            waiver502_5: After the following Python code is executed, what will the the type of L[4:5] if L = [&#8216;p&#8217;, &#8216;y&#8217;, &#8216;t&#8217;, &#8216;h&#8217;, &#8216;o&#8217;, &#8216;n&#8217;]?
+            <li data-component="answer"  id="waiver502_9_opt_a">String</li><li data-component="feedback" id="waiver502_9_opt_a">Due to the way that L was indexed in to, the resulting type will be a list.</li>
             
-            <li data-component="answer"  id="waiver502_9_opt_b">Float</li><li data-component="feedback" id="waiver502_9_opt_b">B working</li>
+            <li data-component="answer" data-correct id="waiver502_9_opt_b">List</li><li data-component="feedback" id="waiver502_9_opt_b">Due to the way that L was indexed in to, the resulting type will be a list.</li>
             
-            <li data-component="answer"  id="waiver502_9_opt_c">String</li><li data-component="feedback" id="waiver502_9_opt_c">C working</li>
-            
-            <li data-component="answer" data-correct id="waiver502_9_opt_d">List</li><li data-component="feedback" id="waiver502_9_opt_d">D working</li>
-            
-            <li data-component="answer"  id="waiver502_9_opt_e">Dictionary</li><li data-component="feedback" id="waiver502_9_opt_e">E working</li>
+            <li data-component="answer"  id="waiver502_9_opt_c">Dictionary</li><li data-component="feedback" id="waiver502_9_opt_c">Unless the element that is indexed in to is a dictionary, the type of the value will not be a dictionary. In this case, even though the element is a string, the way that it was indexed will result in a list with the single element.</li>
             
 
             </ul>
             
 <textarea data-component="activecode" id=waiver502_10 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Write code so that the number of times the letter **a**
-# is written in the string provided is saved as the value
-# of a variable called num_of_a.
+# Write code so that if the letter q is in the string
+# then the program should assign the string "q is present"
+# to a variable called sent_ans, otherwise, it should assign
+# that variable the value of "q is not present".
 
 sent_long = "Programming is a useful skill for people to know in this day and age, where computers are an important and vital tool in societies."
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(sent_ans, "q is not present", "Testing whether sent_ans has been correctly set up and assigned the right value.")
+
+myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_11">
-            <p>waiver502_5: What will print out at the end of this section of code?</p>
+            <p>waiver502_6: What will print out at the end of this section of code?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">first</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">sec</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">first</span> <span class="o">==</span> <span class="n">sec</span> <span class="o">+</span> <span class="mi">1</span>
@@ -462,21 +500,21 @@ sent_long = "Programming is a useful skill for people to know in this day and ag
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="waiver502_11_opt_a">5</li><li data-component="feedback" id="waiver502_11_opt_a">A working</li>
+            <li data-component="answer"  id="waiver502_11_opt_a">6</li><li data-component="feedback" id="waiver502_11_opt_a">First was compared against sec, not combined with sec + 1, it is still 3.</li>
             
-            <li data-component="answer"  id="waiver502_11_opt_b">3</li><li data-component="feedback" id="waiver502_11_opt_b">B working</li>
+            <li data-component="answer" data-correct id="waiver502_11_opt_b">3</li><li data-component="feedback" id="waiver502_11_opt_b">First still is assigned the value of 3, even after the comparison against sec + 1.</li>
             
-            <li data-component="answer"  id="waiver502_11_opt_c">False</li><li data-component="feedback" id="waiver502_11_opt_c">C working</li>
+            <li data-component="answer"  id="waiver502_11_opt_c">False</li><li data-component="feedback" id="waiver502_11_opt_c">First is not reassigned the value of the comparison of first and sec + 1, which would have been True, not False, so first is still 3.</li>
             
-            <li data-component="answer" data-correct id="waiver502_11_opt_d">True</li><li data-component="feedback" id="waiver502_11_opt_d">D working</li>
+            <li data-component="answer"  id="waiver502_11_opt_d">True</li><li data-component="feedback" id="waiver502_11_opt_d">First is not reassigned the value of the comparison of first and sec + 1, so it cannot be True. First is still 3.</li>
             
-            <li data-component="answer"  id="waiver502_11_opt_e">None of the above, there will be an error.</li><li data-component="feedback" id="waiver502_11_opt_e">E working</li>
+            <li data-component="answer"  id="waiver502_11_opt_e">None of the above, there will be an error.</li><li data-component="feedback" id="waiver502_11_opt_e">No error occurs, all of the lines are permissible in python.</li>
             
 
             </ul>
             
     <pre data-component="parsons" id="waiver502_12" data-maxdist=5>
-        <span data-question>waiver502_6: Arrange the following code snipits in the correct order so that the list of letters creates a dictionary where in the key is the letter and the value is the number of times it has occured in the list.
+        <span data-question>waiver502_7: Arrange the following code snipits in the correct order so that the list of letters creates a dictionary where in the key is the letter and the value is the number of times it has occured in the list.
 </span>let_list = ['a', 't',
       'm', 'i','c', 'i',
       'b', 'e', 'y', 'p',
@@ -497,104 +535,131 @@ for let in let_list:
       dict[let] = 1</pre>
     
 <textarea data-component="activecode" id=waiver502_13 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Using the dictionary provided, print out each key
-# value pair on a separate line, but only if the value
-# contains the letter **m**.
+# Using the dictionary provided, add an extra
+# key value pair, whose key is the string festival
+# and whose value is the string summer fest.
 
 word_dict = {"yellow": "maize", "blue": "same thing", "NQ": "North Quad", "UMSI": "University of Michigan School of Information", "A2": "Ann Arbor", "Big House": "The Football Stadium", "Language": "Python", "Fishbowl": "Computing Site"}
 
-# It should look something like this:
+=====
 
-# yellow maize
-# blue same thing
-# UMSI University of Michigan School of Information
-# Big House The Football Stadium
-# Fishbowl Computing Site
+from unittest.gui import TestCaseGui
 
-# the order may be different, but there should be
-# no more and no fewer pairs
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(sorted(word_dict), sorted({"yellow": "maize", "blue": "same thing", "NQ": "North Quad", "UMSI": "University of Michigan School of Information", "A2": "Ann Arbor", "Big House": "The Football Stadium", "Language": "Python", "Fishbowl": "Computing Site", "festival": "summer fest"}), "Checking whether word_dict has the right keys.")
+      self.assertEqual(sorted(word_dict.values()), sorted("maize", "same thing", North Quad", "University of Michigan School of Information", "Ann Arbor", "The Football Stadium", "Python", "Computing Site", "summer fest"), "Checking whether word_dict has the right values.")
+
+
+myTests().main()
 </textarea>
 
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_14">
-            <p>waiver502_7: What would occur when this code is printed?</p>
+            <p>waiver502_8: What would occur when this code is printed?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">d</span><span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">d</span><span class="p">[</span><span class="s">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">d</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;b&#39;</span>
-<span class="k">print</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">python</span>
+<span class="k">print</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">d</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="waiver502_14_opt_a">True</li><li data-component="feedback" id="waiver502_14_opt_a">A working</li>
+            <li data-component="answer"  id="waiver502_14_opt_a">True</li><li data-component="feedback" id="waiver502_14_opt_a">Using the in opperator on dictionaries checks the keys, so since 4 is not a key, it will return False.</li>
             
-            <li data-component="answer" data-correct id="waiver502_14_opt_b">False</li><li data-component="feedback" id="waiver502_14_opt_b">B working</li>
+            <li data-component="answer" data-correct id="waiver502_14_opt_b">False</li><li data-component="feedback" id="waiver502_14_opt_b">Using the in opperator on dictionaries checks the keys, so since 4 is not a key, it will return False.</li>
             
-            <li data-component="answer"  id="waiver502_14_opt_c">'b'</li><li data-component="feedback" id="waiver502_14_opt_c">C working</li>
+            <li data-component="answer"  id="waiver502_14_opt_c">'b'</li><li data-component="feedback" id="waiver502_14_opt_c">When using the in opperator on dictionaries, it checks the keys and would not find the 4. Additionally, the in opperator returns a boolean value, not the key associated with a value.</li>
             
-            <li data-component="answer"  id="waiver502_14_opt_d">4</li><li data-component="feedback" id="waiver502_14_opt_d">D working</li>
+            <li data-component="answer"  id="waiver502_14_opt_d">4</li><li data-component="feedback" id="waiver502_14_opt_d">When using the in opperator on dictionaries, it checks the keys and would not find the 4. Additionally, the in opperator returns a boolean value, not the value it checks for.</li>
             
-            <li data-component="answer"  id="waiver502_14_opt_e">Error occurs</li><li data-component="feedback" id="waiver502_14_opt_e">E working</li>
+            <li data-component="answer"  id="waiver502_14_opt_e">Error occurs</li><li data-component="feedback" id="waiver502_14_opt_e">The in opperator is permissible in python, and returns a boolean value.</li>
             
 
             </ul>
             
-<textarea data-component="activecode" id=waiver502_15 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Accumulate the values so that the total number is displayed in output like so: This is my 29th favorite day of the month.
-# Save this in a variable called **fav_day**.
+    <pre data-component="parsons" id="waiver502_15" data-maxdist=5>
+        <span data-question>waiver502_9: Arrange the code snipits so that the values of the dictionary are added together
+so that the total number is displayed in a string that reads "This is my 29th
+favorite day of the month." and is printed out.
+</span>num_dict = {"University of Michigan": 19, "month": 4,
+           "student": 3.5, "season": 2, "question": .5}
 
-num_dict = {"University of Michigan": 19, "month": 4, "student": 3.5, "season": 2, "question": .5}
-</textarea>
-
+num = 0
+---
+for key in num_dict:
+---
+   num = num + num_dict[key]
+---
+print "This is my " + num + "th favorite day of the month."</pre>
+    
             <ul data-component="multiplechoice" data-multipleanswers="true"  id="waiver502_16">
-            <p>waiver502_8: What is wrong with this dictionary?</p>
+            <p>waiver502_10: What is wrong with this dictionary?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span><span class="s">&quot;diction&quot;</span><span class="p">:</span> <span class="n">ary</span><span class="p">,</span> <span class="s">&quot;gaming consoles&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s">&quot;ps4&quot;</span><span class="p">,</span> <span class="s">&quot;gamecube&quot;</span><span class="p">,</span> <span class="s">&quot;xbox360&quot;</span><span class="p">,</span> <span class="s">&quot;nintendo64&quot;</span><span class="p">,</span> <span class="s">&quot;Atari&quot;</span><span class="p">],</span> <span class="s">&quot;phones&quot;</span><span class="p">:</span> <span class="mi">3</span> <span class="s">&quot;broken&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">donut</span><span class="p">:</span> <span class="p">{</span><span class="s">&quot;Glazed&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s">&quot;blueberry&quot;</span><span class="p">,</span> <span class="s">&quot;Chocolate&quot;</span><span class="p">:</span> <span class="s">&quot;Many&quot;</span><span class="p">}}</span>
 </pre></div>
 </div>
 
             <li data-component="answer"  id="waiver502_16_opt_a">There is a list and a dictionary inside of the dictionary</li><li data-component="feedback" id="waiver502_16_opt_a">Not quite right, you are allowed to have dictionaries and lists inside of other lists and dictionaries.</li>
             
-            <li data-component="answer" data-correct id="waiver502_16_opt_b">There is no assignment statement</li><li data-component="feedback" id="waiver502_16_opt_b"></li>
+            <li data-component="answer" data-correct id="waiver502_16_opt_b">There is no assignment statement</li><li data-component="feedback" id="waiver502_16_opt_b">Yes, there is no assignment statement, thus there is no way to use the dictionary later on.</li>
             
-            <li data-component="answer" data-correct id="waiver502_16_opt_c">Some of the values and keys are missing quotes</li><li data-component="feedback" id="waiver502_16_opt_c"></li>
+            <li data-component="answer" data-correct id="waiver502_16_opt_c">Some of the values and keys are missing quotes</li><li data-component="feedback" id="waiver502_16_opt_c">Yes, some of the values and keys that are supposed to be strings are missing quotes around them, thus the dictionary will think that they are missing variables and cause an error.</li>
             
-            <li data-component="answer" data-correct id="waiver502_16_opt_d">There's a comma missing</li><li data-component="feedback" id="waiver502_16_opt_d"></li>
+            <li data-component="answer" data-correct id="waiver502_16_opt_d">There's a comma missing</li><li data-component="feedback" id="waiver502_16_opt_d">Yes, there is a comma missing, which would cause an error when trying to run. Syntax is important to running programs.</li>
             
             <li data-component="answer"  id="waiver502_16_opt_e">a number is a key, which is not allowed</li><li data-component="feedback" id="waiver502_16_opt_e">Not quite right, numbers are allowed to be keys and values.</li>
             
 
             </ul>
             
-<textarea data-component="activecode" id=waiver502_17 data-lang="python"   data-include=addi_functions data-timelimit=25000   data-audio=''     >
-# We have provided a function called **random_digit()** which takes no inputs and produces a number between 0 and 9
-# Using this function, print whether or not the resulting number is above 6, below 3, or inbetween.
-# If it is above 6, print "The random number generated is above 6", if it is below 3, print "The random number
-# generated is below 3", and if it is between, print "The random number generated is between 3 and 6".
+<textarea data-component="activecode" id=waiver502_17 data-lang="python"    data-timelimit=25000   data-audio=''     >
+# assign to the variable desti, strings that describe
+# whether or not the length of "Pip install" is above 15,
+# below 8, or inbetween. If it is above 15, assign it
+# "The lenth of the string is greater than 15",
+# if it is below 8, assign it "The lenth of the string is
+# less than 8", and if it is between, assign it
+# "The length of the string is between 15 and 8".
+
+check = "Pip install"
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(desti, "The length of the string is between 15 and 8", "desti may have been assigned the incorrect string.")
+
+myTests().main()
 </textarea>
 
-<textarea data-component="activecode" id=waiver502_18 data-lang="python"   data-include=addi_functions data-timelimit=25000   data-audio=''     >
-# Iterate through the list of integers so that, using the **square()** function, if the resulting value is
-# divisable by 4 with zero remaining, then the original number is saved into a new list called **div_four**,
-# otherwise save it to a new list called **not_div_four**.
-
-
-lst_nums = [9, 392, 4, 10, 244, 206, 506, 1983, 1817, 16]
-</textarea>
-
+    <pre data-component="parsons" id="waiver502_18" data-maxdist=5>
+        <span data-question>waiver502_11: Arrange the code snipits so that the list of integers is iterated through so that if the resulting value is divisable by 3 with zero remaining, then "div by 3: " and the number is printed, otherwise nothing happens.
+</span>lst_nums = [9, 392, 4, 10, 244, 206, 506, 1983, 1817, 16]
+---
+for nums in lst_nums:
+---
+   if num % 3 == 0:
+---
+      print "div by 3: ", num</pre>
+    
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_19">
-            waiver502_9: Can you index into a dictionary?
+            waiver502_12: Can you index into a dictionary?
             <li data-component="answer"  id="waiver502_19_opt_a">Yes, you can index into a dictionary by using their positions.</li><li data-component="feedback" id="waiver502_19_opt_a">Dictionaries don't have positions that you can use to index.</li>
             
             <li data-component="answer"  id="waiver502_19_opt_b">Yes, you can index into a dictionary because they are like lists, just with {} brackets instead of [] ones.</li><li data-component="feedback" id="waiver502_19_opt_b">Dictionaries aren't quite like lists, they are unordered whereas lists are ordered.</li>
             
-            <li data-component="answer" data-correct id="waiver502_19_opt_c">No, you cannot index into a dictionary because they do not have positions.</li><li data-component="feedback" id="waiver502_19_opt_c">Correct!</li>
+            <li data-component="answer" data-correct id="waiver502_19_opt_c">No, you cannot index into a dictionary because they do not have positions.</li><li data-component="feedback" id="waiver502_19_opt_c">You cannot index into a dictionary because thery lack positions to use for numeric indices.</li>
             
-            <li data-component="answer"  id="waiver502_19_opt_d">No, you cannot index into a dictionary because the {} brakets are different than then [] ones.</li><li data-component="feedback" id="waiver502_19_opt_d">They are different kinds of brakets, but that's not the reason why you can't index into a dictionary.</li>
+            <li data-component="answer"  id="waiver502_19_opt_d">No, you cannot index into a dictionary because the {} brackets are different than then [] ones.</li><li data-component="feedback" id="waiver502_19_opt_d">They are different kinds of brackets, but that's not the reason why you can't index into a dictionary.</li>
             
 
             </ul>
             
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_20">
-            <p>waiver502_10: What is printed by the following statement?</p>
+            <p>waiver502_13: What is printed by the following statement?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">new_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;Pizza&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s">&quot;Large&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&quot;Medium&quot;</span><span class="p">:</span> <span class="s">&quot;Zero&quot;</span><span class="p">,</span> <span class="s">&quot;Extra-large&quot;</span><span class="p">:</span> <span class="s">&quot;5&quot;</span><span class="p">}</span>
 <span class="k">print</span> <span class="n">new_dict</span><span class="p">[</span><span class="s">&quot;Medium&quot;</span><span class="p">]</span>
 </pre></div>
@@ -602,47 +667,58 @@ lst_nums = [9, 392, 4, 10, 244, 206, 506, 1983, 1817, 16]
 
             <li data-component="answer"  id="waiver502_20_opt_a">"Zero"</li><li data-component="feedback" id="waiver502_20_opt_a">Not quite, the quotes will not be printed out.</li>
             
-            <li data-component="answer" data-correct id="waiver502_20_opt_b">Zero</li><li data-component="feedback" id="waiver502_20_opt_b">Correct!</li>
+            <li data-component="answer" data-correct id="waiver502_20_opt_b">Zero</li><li data-component="feedback" id="waiver502_20_opt_b">The value of the key will be printed out without quotes.</li>
             
-            <li data-component="answer"  id="waiver502_20_opt_c">Error, you cannot index into a dictionary</li><li data-component="feedback" id="waiver502_20_opt_c">No, this is not indexing into a dictionary, this refers to the value that is associated with the key.</li>
+            <li data-component="answer"  id="waiver502_20_opt_c">Error, you cannot index into a dictionary.</li><li data-component="feedback" id="waiver502_20_opt_c">No, this is not indexing into a dictionary, this is refering to the value that is associated with the key.</li>
             
 
             </ul>
             
 <textarea data-component="activecode" id=waiver502_21 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Write code so that the values of this list of students from different programs are increased by one.
-# This should work for any time it is asked (do not hardcode).
+# Write code so that the length of the list
+# is assigned to a variable called student_len.
 
 students = [52, 45, 90, 18, 150, 390, 1029]
+
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(student_len, len(students), "You incorrectly assigned the value of student_len to be the length of students.")
+
+myTests().main()ac
 </textarea>
 
 <textarea data-component="activecode" id=waiver502_22 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# Write code to increase the number of students who are in Information so that there are 490 students.
+# Write code to change the number of students
+# who are in Information so that there are 490 students.
 
-enrollment = {"architecture": 638, "InterArts": 15, "Law": 885, "Pharmacy": 420, "Information": 459, "LSA": 18290, "Engineering": 8723, "Social Work": "472"}
+enrollment = {"Architecture": 638, "InterArts": 15, "Law": 885, "Pharmacy": 420, "Information": 459, "LSA": 18290, "Engineering": 8723, "Social Work": "472"}
 </textarea>
 
-<textarea data-component="activecode" id=waiver502_23 data-lang="python"    data-timelimit=25000   data-audio=''     >
-# We have provided you with another function, this one is called **greeting()** and takes two optional inputs, the
-# first is a string for the name and the second is an integer for the number of exclamation marks.
-# Using variables called **default**, **dean**, and **excited**, save different uses of the function **greeting()**
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="waiver502_23">
+            <p>waiver502_14: Which of these are equivalent? (Choose all that apply)</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">var</span> <span class="o">=</span> <span class="s">&quot;Go Blue!&quot;</span>
+</pre></div>
+</div>
 
-def greeting(name, num):
-   return "Hello,", name + ", and welcome to umich" + num * "!"
+            <li data-component="answer" data-correct id="waiver502_23_opt_a">var[4:5]</li><li data-component="feedback" id="waiver502_23_opt_a">This refers to the substring "l", not "lu", because the slice goes up to but does include position 5.</li>
+            
+            <li data-component="answer" data-correct id="waiver502_23_opt_b">var[4]</li><li data-component="feedback" id="waiver502_23_opt_b">This refers to the substring "l".</li>
+            
+            <li data-component="answer"  id="waiver502_23_opt_c">var["l"]</li><li data-component="feedback" id="waiver502_23_opt_c">An Error occurs because when indexing, you must use the numerical position.</li>
+            
+            <li data-component="answer" data-correct id="waiver502_23_opt_d">var[-3]</li><li data-component="feedback" id="waiver502_23_opt_d">This refers to the substring "g".</li>
+            
 
-#### DO NOT change the function definition above this line (OK to add comments)
-
-# Save a basic function call to the variable called default, so that its value is the string "Hello, Student, and welcome to umich!"
-
-
-# Save a funtion call to the variable called dean, this time using the name of the dean of the school, Thomas Finholt, for the greetings.
-
-
-# Save a function call to the variable called excited, this time just changing the number of exclamation marks so that there are five of them.
-</textarea>
-
+            </ul>
+            
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_24">
-            <p>waiver502_11: What would be saved to the value of detention at the end of the code?</p>
+            <p>waiver502_15: What would be saved to the value of detention at the end of the code?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">tardy</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">late</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="n">detention</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
@@ -666,6 +742,19 @@ def greeting(name, num):
             <li data-component="answer" data-correct id="waiver502_24_opt_b">"You're less tardy."</li><li data-component="feedback" id="waiver502_24_opt_b">Correct!</li>
             
             <li data-component="answer"  id="waiver502_24_opt_c">"You are more tardy than late."</li><li data-component="feedback" id="waiver502_24_opt_c">Not exactly, not only does late happen to be greater than tardy, but there is another if else conditional that the program goes through.</li>
+            
+
+            </ul>
+            
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="waiver502_25">
+            waiver502_16: How would you use the range function to create a list that spans from 23 up to and including 89?
+            <li data-component="answer" data-correct id="waiver502_25_opt_a">range(23, 90)</li><li data-component="feedback" id="waiver502_25_opt_a">Range, when given two inputs, will be inclusive of the first and exclusive of the second, so this will work!</li>
+            
+            <li data-component="answer"  id="waiver502_25_opt_b">range(22, 90)</li><li data-component="feedback" id="waiver502_25_opt_b">Range, when given two inputs, will be inclusive of the first and exclusive of the second.</li>
+            
+            <li data-component="answer"  id="waiver502_25_opt_c">range(23, 89)</li><li data-component="feedback" id="waiver502_25_opt_c">Range, when given two inputs, will be inclusive of the first and exclusive of the second.</li>
+            
+            <li data-component="answer"  id="waiver502_25_opt_d">range(22, 89)</li><li data-component="feedback" id="waiver502_25_opt_d">Range, when given two inputs, will be inclusive of the first and exclusive of the second.</li>
             
 
             </ul>

@@ -32,6 +32,7 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'false',
+            'basecourse': 'placement506'
         }
     )
 )

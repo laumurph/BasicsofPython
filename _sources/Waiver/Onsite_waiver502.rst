@@ -129,7 +129,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       class myTests(TestCaseGui):
 
          def testOne(self):
-            self.assertEqual(enrollment["Information"], 459)
+            self.assertEqual(enrollment["Information"], 490)
 
       myTests().main()
 

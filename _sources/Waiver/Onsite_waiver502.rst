@@ -1,8 +1,3 @@
-:orphan:
-.. qnum::
-   :prefix: waiver502_
-   :start: 1
-
 ..  Copyright (C) Lauren Murphy and Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
@@ -10,6 +5,12 @@
     Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
     the license is included in the section entitled "GNU Free Documentation
     License".
+
+:orphan:
+
+.. qnum::
+   :prefix: waiver502_
+   :start: 1
 
 .. highlight:: python
     :linenothreshold: 500
@@ -28,7 +29,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 502 Waiver Exam
 ---------------
 
-**Instructions:** For questions that ask you to write code, write the code you want to save in the provided active code windows. The last code you have saved for each problem by the deadline is what will be graded. Instructions are comments in the code window. *Do not* hit **Finish Exam** until you are finished.
+**Instructions:** For questions that ask you to write code, write code in the provided active code windows and click the Run button. Feel keep editing the code until you get feedback that you have passed the tests. The last code you run for each problem will be graded. Instructions are comments in the code windows. *Do not* hit **Finish Exam** until you are finished.
 
 
 .. timed:: timed1
@@ -38,8 +39,8 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. activecode:: waiver502_1
       :nocodelens:
 
-      # Create a variable called uni and assign it the value of 
-      # this phrase: University of Michigan
+      # Create a variable called uni and assign it the value:
+      # "University of Michigan"
 
       =====
 
@@ -48,7 +49,7 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
       class myTests(TestCaseGui):
 
          def testOne(self):
-            self.assertEqual(uni, "University of Michigan", "Either uni has not been named correctly or has not been assigned the value of the string, 'University of Michigan'")
+            self.assertEqual(uni, "University of Michigan", "Checking value of variable uni")
 
       myTests().main()
 
@@ -111,42 +112,42 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
          d[3] = 'b'
          print 4 in d
 
-   .. mchoice:: waiver502_20
-      :answer_a: "Zero"
-      :answer_b: Zero
-      :answer_c: Error, you cannot index into a dictionary.
-      :feedback_a: Not quite, the quotes will not be printed out.
-      :feedback_b: The value of the key will be printed out without quotes.
-      :feedback_c: No, this is not indexing into a dictionary, this is refering to the value that is associated with the key.
-      :correct: b
-
-      What is printed by the following statement?
-
-      .. sourcecode:: python
-      
-         new_dict = {"Pizza": 7, "Large": 2, "Medium": "Zero", "Extra-large": "5"}
-         print new_dict["Medium"]
-
-
 
    .. activecode:: waiver502_22
       :nocodelens:
 
-      # Write code to change the number of students 
+      # Without changing the existing code, write a new line of code
+      # to change the number of students
       # who are in Information so that there are 490 students.
 
       enrollment = {"Architecture": 638, "InterArts": 15, "Law": 885, "Pharmacy": 420, "Information": 459, "LSA": 18290, "Engineering": 8723, "Social Work": "472"}
 
-   .. mchoice:: waiver502_24
-      :answer_a: "You have been late more than tardy."
-      :answer_b: "You're less tardy."
-      :answer_c: "You are more tardy than late."
-      :feedback_a: While that did happen at first, the program continues and this is overwritten.
-      :feedback_b: Correct!
-      :feedback_c: Not exactly, not only does late happen to be greater than tardy, but there is another if else conditional that the program goes through.
-      :correct: b 
+      =====
 
-      What would be saved to the value of res at the end of the code?
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(enrollment["Information"], 459), 'Check value of key "Information"')
+
+      myTests().main()
+
+
+   .. mchoice:: waiver502_24
+      :answer_a: You have been late more than tardy.
+      :answer_b: You are just as late as you are tardy.
+      :answer_c: You are more tardy than late.
+      :answer_d: You might be more tardy.
+      :answer_e: You're less tardy.
+      :feedback_a: While that did happen at first, the program continues and this is overwritten.
+      :feedback_b: Not quite!
+      :feedback_c: Not quite!
+      :feedback_d: Not quite!
+      :feedback_e: Correct!
+      :correct: e
+
+      What will be printed?
 
       .. sourcecode:: python
       
@@ -169,7 +170,8 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
    .. activecode:: waiver502_23
       :nocodelens:
 
-      # Write code to iterate through the numbers in lst, printing out double each value.
+      # Write code to iterate through the numbers in lst,
+      # printing out double each value.
       # Your output should be:
       # 2
       # 4

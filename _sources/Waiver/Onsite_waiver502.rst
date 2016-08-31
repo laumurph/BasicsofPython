@@ -183,6 +183,17 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
   lst = [1, 2, 3, 4, 5]
 
+  ====
+
+  from unittest.gui import TestCaseGui
+
+  class myTests(TestCaseGui):
+
+     def testOne(self):
+        self.assertIn("2\n4\n6\n8\n10",self.getOutput(),"Testing output.")
+
+  myTests().main()
+
 .. activecode:: waiver502_8
   :nocodelens:
   :autograde: unittest

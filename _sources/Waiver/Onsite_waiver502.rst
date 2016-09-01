@@ -170,7 +170,6 @@ The following is the assessment for the 502 Waiver. This should take about 30 mi
 
 .. activecode:: waiver502_23
   :nocodelens:
-  :autograde: unittest
 
   # Write code to iterate through the numbers in lst,
   # printing out double each value.
